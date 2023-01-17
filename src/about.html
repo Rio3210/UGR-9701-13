@@ -5,131 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPod</title>
+   
+    <!-- custom css link  -->
+<link rel="icon" type="image/x-icon" href="./images/mainIcons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/about.css">
+    
+    
 
 </head>
 <body>
+
     <!--header starts here--> 
-    <header>
+    <header class="header">
         <!-- logo of the company  -->
-        <div><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="300" height="163"></div>
+        <div class="logo"><a href="../index.html"><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="90" height="90" ></a></div>
         
         <!-- nav bar starts here  -->
-        <nav>
+        <nav class="navbar">
             <!-- unordered list of nav starts here  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <ul class="li">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
 
                 <!-- dropdown page   -->
-                <li><a href="#">Pages</a>
+                <li id="pp"><a href="#">Pages </a> <img src="./images/mainIcons/drop.png" alt="drop down" width="15px" height="15px">
 
                     <!-- unordered list for dropdon  -->
-                    <ul>
+                    <ul class="dropdown">
                         
-                        <li><a href="blog.html">Blog</a> </li>
-                        <li><a href="contact.html">ContactUs</a> </li>
-                        <li><a href="about.html">AboutUs</a> </li>
-                        <li><a href="podcast.html">Podcasts</a> </li>
-                        <li><a href="login.html">LogIn</a> </li>
+                        <li><a href="./blog.html">Blog</a> </li>
+                        <li><a href="./contact.html">ContactUs</a> </li>
+                        <li><a href="./about.html">AboutUs</a> </li>
+                        <li><a href="./podcast.html">Podcasts</a> </li>
+                        <li><a href="./login.html">LogIn</a> </li>
 
                     </ul>           
                    
                 </li>
                 <!-- dropdown ends here  -->
 
-                <li><a href="contact.html">Contact</a></li>         
+                <li><a href="./contact.html">Contact</a></li>         
             </ul>   
              <!-- unordered list of nav ends here  -->   
 
         </nav>
         <!-- nav ends here  -->
-
-        <div><form action="index.html" method="post">
-            <label for="top-search">
-                <!-- top search  -->
-                <input type="search" id="top-search"  placeholder="Search and hit enter..." required>
+        
+        <div class="topsearch__input__container" id="searchbar">
+            <form class="topinput__form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search & hit enter" id="top__search" class="search--bar__input">
                 
-                <!-- hidden top search label text   -->
-                <span>search</span> 
-            </label>
-          </form>
+                <button id="search-btn" type="submit" aria-label="search button" class="search--bar__button"><img src="./images/mainIcons/search.png" alt="search icon"></button>
+            </form>
         </div>
+        
         <!-- div containing social accounts  -->
 
-        <div>
+        <!-- top__social--wrapper -->
+        <div class="social">
             <!-- unorder list for social media links  -->
-            <ul>
-                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+            <ul class="sociallist">
+                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
             </ul></div>
-        <div><a href="profile.html">Profile</a></div>
+        <div class="top-profile"><a href="profile.html">Profile</a></div>
+        <!-- hamburger bar for responsiveness  -->
+
+        <div class="hamburger-bar" id="bar">
+            <img src="./images/mainIcons/hamburger.png" alt="twitter icon" width="50" height="50">
+        </div>
+
+
+        <!-- mobile btn  -->
+        <div class="mobile">
+            <button class="search-button-mobile"  aria-label="search button"><img src="./images/mainIcons/search.png" alt="mobile search" id="searchbtn--mob"> </button>
+            <div class="profile__button--mobile"><a href="profile.html"><img src="./images/mainIcons/profile.png" alt="profile"></a></div>
+        </div>
     </header>
     <!-- header ends here / -->
+
+    <!-- side bar  -->
+    <div class="side__navbar">
+        <div class="close__btn"><img src="./images/mainIcons/close.png" alt="close botton"></div>
+        <ul class="sidenav__unorderd">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+  
+            <li><a href="./blog.html">Blog</a> </li>
+            <li><a href="./contact.html">ContactUs</a> </li>
+            <li><a href="./podcast.html">Podcasts</a> </li>
+            <li><a href="./login.html">LogIn</a> </li>
+            <li><a href="./profile.html">Profile</a></li>
+            
+        </ul> 
+    </div>
     
+    <!-- main starts here  -->
     <main>
-        <section>
-            <h1>About Us</h1>
-            <div>
-                <video controls width="500" height="500">
+        <section class="Section__about1">
+            <h2>About Us</h2>
+            <div class="about1__container" >
+                
+                <video controls >
                     <source src="./videos/promo.mp4" type="video/mp4">
-                    <track src="ps/promo-en.vtt" label="English"
-                        kind="captions" srclang="en-us" default role="doc-subtitle"> 
+                    <track src="./videos/promo-en.vtt" label="English"
+                        kind="captions" srclang="en-us" default> 
                        
                     <track src="./videos/promo-am.vtt" label="Amharic"
-                        kind="captions" srclang="no" default role="doc-subtitle">
+                        kind="captions" srclang="no" default>
                 </video>
             </div>
         </section>
-        <section>
+        <section class="story__section">
+            
+            <div class="story__section--wrapper">
+                <h3>FirshPod</h3>
+                <p>FreshPod is an online podcast platform is an excellent way to find and listen to podcasts from a variety of different categories. For example, there may be options for sports, technology, entertainment, agriculture and philosophy. With so many different genres available, listeners can quickly find the kind of content they are interested in. Furthermore, the platform will often provide recommendations for new podcasts based on what has previously been liked or saved by a user. Podcast platforms also make discovering new shows much easier than searching through individual websites or directories. Plus, listening to podcasts on a unified platform creates an enjoyable user experience overall.</p>
+            </div>
+            <div class="story__section--wrapper">
+                <h3>The reason why it exists</h3>
+                <p>Online podcast platform as a creative business venture in order to take advantage of the growing number of people listening to podcasts worldwide. This can be lucrative, especially since they can offer subscriptions or access to exclusive content such as interviews and special series. Additionally, with their own platform, they could attract more listeners and build an engaged community around their shows. Finally, unlike other businesses that require significant upfront resources to launch and maintain, a podcast platform is relatively cheap to start and run without needing too much expertise. All in all, starting an online podcast platform is an increasingly attractive business opportunity for anyone looking for a creative outlet with potential revenue growth.</p>
+            </div>
+            <div class="story__section--wrapper">
+                <h3>How it works?</h3>
+                <p>Podcasts can be produced independently or through a traditional media outlet. To form and release a podcast, one must first create audio or video content that meets the user's desired goal. The content should then be edited and formatted for optimal quality and performance on various digital platforms. After that, the podcast should be uploaded to hosting websites such as iTunes, Spotify, YouTube, or any other web streaming service according to its target audience. Once the host uploads an episode of the podcast it will immediately become available to any user subscribed to the appropriate channel. Podcast episodes should also be promoted through channels such as social media and blog posts to reach potential listeners and boost engagement.</p>
+            </div>
+            <div class="story__section--wrapper">
+                <h3>About the owners</h3>
+                <p>This group of people are the owners of an online podcast platform. They have a love for podcasts and understand the power it has in connecting with an audience. The platform they have created provides creators, both professional and amateur, with the tools and resources necessary to monetize their content. Through their platform, podcasters can share brief advertisement pitches prior to episodes, link sponsorships onto episode artwork and descriptions, and securely manage payments from listeners through monthly subscription plans. This revenue stream gives podcasters the option to pursue their passion without sacrificing long-term financial stability. 
 
-            <!-- different articles  -->
-            <div>
-                <article>
-                    <h2>FirshPod</h2>
-                    <p>FreshPod is an online podcast platform is an excellent way to find and listen to podcasts from a variety of different categories. For example, there may be options for sports, technology, entertainment, agriculture and philosophy. With so many different genres available, listeners can quickly find the kind of content they are interested in. Furthermore, the platform will often provide recommendations for new podcasts based on what has previously been liked or saved by a user. Podcast platforms also make discovering new shows much easier than searching through individual websites or directories. Plus, listening to podcasts on a unified platform creates an enjoyable user experience overall.</p>
-                </article>
-            </div>
-            <div>
-                <article>
-                    <h2>The reason why it exists</h2>
-                    <p>Online podcast platform as a creative business venture in order to take advantage of the growing number of people listening to podcasts worldwide. This can be lucrative, especially since they can offer subscriptions or access to exclusive content such as interviews and special series. Additionally, with their own platform, they could attract more listeners and build an engaged community around their shows. Finally, unlike other businesses that require significant upfront resources to launch and maintain, a podcast platform is relatively cheap to start and run without needing too much expertise. All in all, starting an online podcast platform is an increasingly attractive business opportunity for anyone looking for a creative outlet with potential revenue growth.</p>
-                </article>
-            </div>
-            <div>
-                <article>
-                    <h2>How it works?</h2>
-                    <p>Podcasts can be produced independently or through a traditional media outlet. To form and release a podcast, one must first create audio or video content that meets the user's desired goal. The content should then be edited and formatted for optimal quality and performance on various digital platforms. After that, the podcast should be uploaded to hosting websites such as iTunes, Spotify, YouTube, or any other web streaming service according to its target audience. Once the host uploads an episode of the podcast it will immediately become available to any user subscribed to the appropriate channel. Podcast episodes should also be promoted through channels such as social media and blog posts to reach potential listeners and boost engagement.</p>
-                </article>
-            </div>
-            <div>
-                <article>
-                    <h2>About the owners</h2>
-                    <p>This group of people are the owners of an online podcast platform. They have a love for podcasts and understand the power it has in connecting with an audience. The platform they have created provides creators, both professional and amateur, with the tools and resources necessary to monetize their content. Through their platform, podcasters can share brief advertisement pitches prior to episodes, link sponsorships onto episode artwork and descriptions, and securely manage payments from listeners through monthly subscription plans. This revenue stream gives podcasters the option to pursue their passion without sacrificing long-term financial stability. 
-
-                        The platform was founded by a small but growing team of dedicated individuals that collectively possess extensive knowledge about all aspects of podcasting. In addition to making sure everything runs smoothly on the technical side, this team communicates regularly with potential partners in order to provide their users with access to premium providers for web hosting, analytics, marketing services and more. With years of combined experience and innovation, this team believes in using technology to help enhance podcasting experiences around the world. 
-                        
-                        In addition to helping podcasters fundraise money for their projects, this group is also passionate about utilizing their user base as a force for social change while advocating for more diverse representation within the voice communities being covered on platforms like theirs. They often host talks between various content providers who come together every month to seek creative solutions that strengthen network solidarity amongst these voices — whether through new initiatives or even formalized programming strategies that could be prioritized too often ignored topics. 
-                        
-                        Their ultimate vision is use their collective knowledge and resources are used effectively build an equitable space where anyone can find new ways grow asPodcasters — fostering community building opportunities amongst both professionals newcomers alike while paving pathways success on larger levels modern society today . With support from loyal users , investors other industry specialists , this team works hard ensure proprietary system remains accessible open everyone all walks life .
-                    </p>
-                </article>
+                    The platform was founded by a small but growing team of dedicated individuals that collectively possess extensive knowledge about all aspects of podcasting. In addition to making sure everything runs smoothly on the technical side, this team communicates regularly with potential partners in order to provide their users with access to premium providers for web hosting, analytics, marketing services and more. With years of combined experience and innovation, this team believes in using technology to help enhance podcasting experiences around the world. 
+                    
+                    In addition to helping podcasters fundraise money for their projects, this group is also passionate about utilizing their user base as a force for social change while advocating for more diverse representation within the voice communities being covered on platforms like theirs. They often host talks between various content providers who come together every month to seek creative solutions that strengthen network solidarity amongst these voices — whether through new initiatives or even formalized programming strategies that could be prioritized too often ignored topics. 
+                    
+                    Their ultimate vision is use their collective knowledge and resources are used effectively build an equitable space where anyone can find new ways grow asPodcasters — fostering community building opportunities amongst both professionals newcomers alike while paving pathways success on larger levels modern society today . With support from loyal users , investors other industry specialists , this team works hard ensure proprietary system remains accessible open everyone all walks life .
+                </p>
             </div>
         
         </section>
-        <!-- story section ends here  -->
 
-        <!--section for subscription starts here  -->
-        <section>
-            <div>
+        <!-- section for subscription starts here  -->
+        <section class="subs">
+            <div class="subs-container">
                 <h2>SignUP Today</h2>
-                <div>
+                <div class="subsc">
                     <!-- subscription form  -->
                     <form action="index.html" method="post">
                         <label for="subscribe">
-                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required>
-                            <button id="sub-btn">Subscribe</button>
+                            <input type="email" id="subscribe" placeholder="email@gmail.com" required >
+                            <!-- <span class="visually-hidden">label for subscription</span> visually hidden label for subscription  -->
+                            <button class="sub-submit">Subscribe</button>
 
                         </label>
                     </form>
@@ -138,55 +167,52 @@
         </section>
         <!-- subscription section ends here  -->
     </main>
-    <!-- main ends here  -->
-
-
     <!-- footer starts here  -->
-
-    <footer>
+    <footer class="footer">
         <!-- footer columns  -->
-        <div>
-            <div>
-                <p>Pages</p>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="signup.html">Register</a>
+        <div class="column">
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./podcast.html">Podcast</a>
+                <a href="./signup.html">Register</a>
             </div>
-            <div>
+            <div class="contact">
                 <!-- contact us info  -->
-                <address>
-                    <p>Contact Us:</p>
-                    <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
-                    <p>+251921581691</p>
-                    <p>AAiT</p>
-                </address>
+                <h3>Contact Us:</h3>
+                <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+                <h4>+251921581691</h4>
+                <h4>AAiT</h4>
             </div>
-            <div>
-                <p>Information: </p>
-                <a href="about.html">AboutUs</a>
-                <a href="blog.html">News</a>
+            <div class="info">
+                <h3>Information: </h3>
+                <a href="./about.html">AboutUs</a>
+                <a href="./blog.html">News</a>
             </div>
-            <div>
-                <p>Social Media links</p>
-                <div>
+            <div class="footer social__container">
+                <h3>Social Media links</h3>
+                <div class="social">
                     <!-- unorder list for social media links  -->
-                    <ul>
-                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+                    <ul class="footer__sociallist">
+                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="./images/mainIcons/google-play.png" alt="googleplay png " width="96" height="33">
-                    <img src="./images/mainIcons/app-store.png" alt="appstore png" width="96" height="33">   
+                <div class="footericon">
+                    <img src="./images/mainIcons/google-play.png" alt="googleplay png ">
+                    <img src="./images/mainIcons/app-store.png" alt="appstore png">    
                 </div>
             </div>
         </div>
         <!-- coppyright  -->
-        <p>&copy; Copyright 2022</p>
+        <p class="copyright__last">&copy; Copyright 2022</p>
     </footer>
     <!-- footer ends here  -->
+
+    <script src="./javaScript/script.js"></script>
+
 </body>
 </html>

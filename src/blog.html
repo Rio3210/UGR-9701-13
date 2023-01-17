@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPod</title>
+   
+    <!-- custom css link  -->
+<link rel="icon" type="image/x-icon" href="./images/mainIcons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/blog.css">
+    
+    
 
 </head>
 <body>
+
     <!--header starts here--> 
-    <header>
+    <header class="header">
         <!-- logo of the company  -->
-        <div><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="300" height="163"></div>
+        <div class="logo"><a href="../index.html"><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="90" height="90" ></a></div>
         
         <!-- nav bar starts here  -->
-        <nav>
+        <nav class="navbar">
             <!-- unordered list of nav starts here  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <ul class="li">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
 
                 <!-- dropdown page   -->
-                <li><a href="#">Pages</a>
+                <li id="pp"><a href="#">Pages </a> <img src="./images/mainIcons/drop.png" alt="drop down" width="15px" height="15px">
 
                     <!-- unordered list for dropdon  -->
-                    <ul>
+                    <ul class="dropdown">
                         
-                        <li><a href="blog.html">Blog</a> </li>
-                        <li><a href="contact.html">ContactUs</a> </li>
-                        <li><a href="about.html">AboutUs</a> </li>
-                        <li><a href="podcast.html">Podcasts</a> </li>
-                        <li><a href="login.html">LogIn</a> </li>
+                        <li><a href="./blog.html">Blog</a> </li>
+                        <li><a href="./contact.html">ContactUs</a> </li>
+                        <li><a href="./about.html">AboutUs</a> </li>
+                        <li><a href="./podcast.html">Podcasts</a> </li>
+                        <li><a href="./login.html">LogIn</a> </li>
 
                     </ul>           
                    
@@ -43,137 +51,145 @@
 
         </nav>
         <!-- nav ends here  -->
-
-        <div><form action="index.html" method="post">
-            <label for="top-search">
-                <!-- top search  -->
-                <input type="search" id="top-search"  placeholder="Search and hit enter..." required>
-               
-                <!-- hidden top search label text   -->
-                <span>search</span> 
-            </label>
-          </form>
+        
+        <div class="topsearch__input__container" id="searchbar">
+            <form class="topinput__form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search & hit enter" id="top__search" class="search--bar__input">
+                
+                <button id="search-btn" type="submit" aria-label="search button" class="search--bar__button"><img src="./images/mainIcons/search.png" alt="search icon"></button>
+            </form>
         </div>
+        
         <!-- div containing social accounts  -->
 
-        <div>
+        <!-- top__social--wrapper -->
+        <div class="social">
             <!-- unorder list for social media links  -->
-            <ul>
-                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+            <ul class="sociallist">
+                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
             </ul></div>
-        <div><a href="profile.html">Profile</a></div>
+        <div class="top-profile"><a href="profile.html">Profile</a></div>
+        <!-- hamburger bar for responsiveness  -->
+
+        <div class="hamburger-bar" id="bar">
+            <img src="./images/mainIcons/hamburger.png" alt="twitter icon" width="50" height="50">
+        </div>
+
+
+        <!-- mobile btn  -->
+        <div class="mobile">
+            <button class="search-button-mobile"  aria-label="search button"><img src="./images/mainIcons/search.png" alt="mobile search" id="searchbtn--mob"> </button>
+            <div class="profile__button--mobile"><a href="profile.html"><img src="./images/mainIcons/profile.png" alt="profile"></a></div>
+        </div>
     </header>
     <!-- header ends here / -->
 
+    <!-- side bar  -->
+    <div class="side__navbar">
+        <div class="close__btn"><img src="./images/mainIcons/close.png" alt="close botton"></div>
+        <ul class="sidenav__unorderd">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+  
+            <li><a href="./blog.html">Blog</a> </li>
+            <li><a href="./contact.html">ContactUs</a> </li>
+            <li><a href="./podcast.html">Podcasts</a> </li>
+            <li><a href="./login.html">LogIn</a> </li>
+            <li><a href="./profile.html">Profile</a></li>
+            
+        </ul> 
+    </div>
     <!-- main section starts here  -->
     <main>
-        <!-- header one  -->
-
-        <h1>News</h1>
-
+        <div class="blog__intro">  
+            <h2> News</h2>
+        </div>
         <!-- section-blog start here  -->
-        <section>
-            <article>
-                <h2>Heading</h2>
-                <div>
-                    <div>
-                        <img src="./images/agriculture.jpg" alt="truckter watering" width="500" height="500">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?</p>
-                    </div>
+        <section class="blog__sec1">
+            <h2>Heading</h2>
+            <div class="blog__sec--wrapper">
+                <div class="blog__sec--img">
+                    <img src="./images/personImg/Kenenissabekele.jpg" alt="Kenenisa Bekele">
                 </div>
-            </article>
+                <div class="blog__sec--story">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, incidunt, eveniet quis ducimus delectus optio reprehenderit non ab deserunt voluptatem blanditiis. Distinctio tempore quas, a mollitia iste quod voluptatibus voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, placeat velit? Ex autem voluptatum eligendi vero nesciunt, neque consequuntur nisi qui est doloremque soluta vitae, veritatis itaque eum sit officiis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo fuga, nostrum sit quo officiis nulla eum quibusdam perferendis ratione id exercitationem, a sed iusto tempora veniam eius impedit similique.
+                    </p>  
+                </div>
+            </div>
         </section>
         <!-- section1-blog ends here  --> 
-        
-        <!-- section two starts here  -->
-        <section>
-            <article>
-                <h2>Heading</h2>
-                <div>
-                    <div>
-                        <img src="./images/personImg/Kenenissabekele.jpg" alt="Kenenisa Bekele" width="400" height="400">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?</p>
-                    </div>
+        <section class="blog__sec2">
+            <h2>Heading</h2>
+            <div class="blog__sec--wrapper">
+                <div class="blog__sec--img">
+                    <img src="./images/personImg/Kenenissabekele.jpg" alt="Kenenisa Bekele">
                 </div>
-            </article>
-
-        </section>
-        <!-- section two ends here  -->
-
-        <!-- section three starts here  -->
-        <section>
-            <article>
-                <h2>Heading</h2>
-                <div>
-                    <div>
-                        <img src="./images/fashion.jpeg" alt="fashion girl" width="400" height="400">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo fuga, nostrum sit quo officiis nulla eum quibusdam perferendis ratione id exercitationem, a sed iusto tempora veniam eius impedit similique.
-                        </p>
-                    </div>
-
+                <div class="blog__sec--story">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque debitis ad modi voluptatibus at corrupti ipsum eius animi velit expedita, atque porro quia consequuntur id nostrum maiores odit. Ad, commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo fuga, nostrum sit quo officiis nulla eum quibusdam perferendis ratione id exercitationem, a sed iusto tempora veniam eius impedit similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum debitis in accusantium velit saepe, necessitatibus harum quas, minima soluta odio facilis suscipit, voluptatibus animi dolorem sed eius placeat sit?
+                    </p>
                 </div>
-            </article>
+            </div>
         </section>
 
-        <!-- section three ends here  -->
 
-        <!-- section four starts here  -->
-        <section>
-            <article>
-                <h2>Heading</h2>
-                <div>
-                    <div>
-                        <img src="./images/personImg/jordan.jpg" alt="michael jordan holding ball" width="400" height="400">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo fuga, nostrum sit quo officiis nulla eum quibusdam perferendis ratione id exercitationem, a sed iusto tempora veniam eius impedit similique.
-                        </p>
-                    </div>
+        <section class="blog__sec3">
+            <h2>Heading</h2>
+            <div class="blog__sec--wrapper">
+                <div class="blog__sec--img">
+                    <img src="./images/fashion.jpeg" alt="Kenenisa Bekele">
                 </div>
-            </article>
+                <div class="blog__sec--story">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque debitis ad modi voluptatibus at corrupti ipsum eius animi velit expedita, atque porro quia consequuntur id nostrum maiores odit. Ad, commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo fuga, nostrum sit quo officiis nulla eum quibusdam perferendis ratione id exercitationem, a sed iusto tempora veniam eius impedit similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum debitis in accusantium velit saepe, necessitatibus harum quas, minima soluta odio facilis suscipit, voluptatibus animi dolorem sed eius placeat sit?
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <!-- section four starts here  -->
-
-        <!-- section five starts here  -->
-        <section>
-            <article>
-                <h2>Heading</h2>
-                <div>
-                    <div>
-                        <img src="./images/personImg/Dr. liya.jpg" alt="Dr. Liya kebede" width="400" height="400">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo fuga, nostrum sit quo officiis nulla eum quibusdam perferendis ratione id exercitationem, a sed iusto tempora veniam eius impedit similique.
-                        </p>
-                    </div>
+        <section class="blog__sec4">
+            <h2>Heading</h2>
+            <div class="blog__sec--wrapper">
+                <div class="blog__sec--img">
+                    <img src="./images/personImg/Kenenissabekele.jpg" alt="Kenenisa Bekele">
                 </div>
-            </article>
+                <div class="blog__sec--story">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, incidunt, eveniet quis ducimus delectus optio reprehenderit non ab deserunt voluptatem blanditiis. Distinctio tempore quas, a mollitia iste quod voluptatibus voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, placeat velit? Ex autem voluptatum eligendi vero nesciunt, neque consequuntur nisi qui est doloremque soluta vitae, veritatis itaque eum sit officiis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nostrum corrupti pariatur, eius nobis tenetur culpa officia maiores a itaque! Adipisci dolor iusto exercitationem sed ullam quisquam enim, excepturi ipsam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo fuga, nostrum sit quo officiis nulla eum quibusdam perferendis ratione id exercitationem, a sed iusto tempora veniam eius impedit similique.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        
-       <!--  section for subscription starts here  -->
-       <section>
-            <div>
+        <section class="vid__pod">
+            <h2>To get videos check our youtube channel</h2>
+            <div class="vid__pod--wrapper">
+                <video controls >
+                    <source src="./videos/promo.mp4" type="video/mp4">
+                    <track src="./videos/promo-en.vtt" label="English"
+                        kind="captions" srclang="en-us" default> 
+                       
+                    <track src="./videos/promo-am.vtt" label="Amharic"
+                        kind="captions" srclang="no" default>
+                </video>
+            </div>
+        </section>
+        <!-- section for subscription starts here  -->
+        <section class="subs">
+            <div class="subs-container">
                 <h2>SignUP Today</h2>
-                <div>
+                <div class="subsc">
                     <!-- subscription form  -->
                     <form action="index.html" method="post">
                         <label for="subscribe">
-                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required>                
-                            <button id="sub-btn">Subscribe</button>
+                            <input type="email" id="subscribe" placeholder="email@gmail.com" required >
+                            <!-- <span class="visually-hidden">label for subscription</span> visually hidden label for subscription  -->
+                            <button class="sub-submit">Subscribe</button>
 
                         </label>
                     </form>
@@ -182,55 +198,52 @@
         </section>
         <!-- subscription section ends here  -->
     </main>
-<!-- main ends here  -->
-
-
-<!-- footer starts here  -->
-
-    <footer>
+    <!-- footer starts here  -->
+    <footer class="footer">
         <!-- footer columns  -->
-        <div>
-            <div>
-                <p>Pages</p>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="signup.html">Register</a>
+        <div class="column">
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./podcast.html">Podcast</a>
+                <a href="./signup.html">Register</a>
             </div>
-            <div>
+            <div class="contact">
                 <!-- contact us info  -->
-                <address>
-                    <p>Contact Us:</p>
-                    <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
-                    <p>+251921581691</p>
-                    <p>AAiT</p>
-                </address>
+                <h3>Contact Us:</h3>
+                <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+                <h4>+251921581691</h4>
+                <h4>AAiT</h4>
             </div>
-            <div>
-                <p>Information: </p>
-                <a href="about.html">AboutUs</a>
-                <a href="blog.html">News</a>
+            <div class="info">
+                <h3>Information: </h3>
+                <a href="./about.html">AboutUs</a>
+                <a href="./blog.html">News</a>
             </div>
-            <div>
-                <p>Social Media links</p>
-                <div>
+            <div class="footer social__container">
+                <h3>Social Media links</h3>
+                <div class="social">
                     <!-- unorder list for social media links  -->
-                    <ul>
-                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+                    <ul class="footer__sociallist">
+                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="./images/mainIcons/google-play.png" alt="googleplay png " width="96" height="33">
-                    <img src="./images/mainIcons/app-store.png" alt="appstore png" width="96" height="33">    
+                <div class="footericon">
+                    <img src="./images/mainIcons/google-play.png" alt="googleplay png ">
+                    <img src="./images/mainIcons/app-store.png" alt="appstore png">    
                 </div>
             </div>
         </div>
         <!-- coppyright  -->
-        <p>&copy; Copyright 2022</p>
+        <p class="copyright__last">&copy; Copyright 2022</p>
     </footer>
     <!-- footer ends here  -->
+
+    <script src="./javaScript/script.js"></script>
+
 </body>
 </html>

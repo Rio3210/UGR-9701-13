@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPod</title>
+   
+    <!-- custom css link  -->
+<link rel="icon" type="image/x-icon" href="./images/mainIcons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/signup.css">
+    
+    
 
 </head>
 <body>
+
     <!--header starts here--> 
-    <header>
+    <header class="header">
         <!-- logo of the company  -->
-        <div><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="300" height="163"></div>
+        <div class="logo"><a href="../index.html"><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="90" height="90" ></a></div>
         
         <!-- nav bar starts here  -->
-        <nav>
+        <nav class="navbar">
             <!-- unordered list of nav starts here  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <ul class="li">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
 
                 <!-- dropdown page   -->
-                <li><a href="#">Pages</a>
+                <li id="pp"><a href="#">Pages </a> <img src="./images/mainIcons/drop.png" alt="drop down" width="15px" height="15px">
 
                     <!-- unordered list for dropdon  -->
-                    <ul>
+                    <ul class="dropdown">
                         
-                        <li><a href="blog.html">Blog</a> </li>
-                        <li><a href="contact.html">ContactUs</a> </li>
-                        <li><a href="about.html">AboutUs</a> </li>
-                        <li><a href="podcast.html">Podcasts</a> </li>
-                        <li><a href="login.html">LogIn</a> </li>
+                        <li><a href="./blog.html">Blog</a> </li>
+                        <li><a href="./contact.html">ContactUs</a> </li>
+                        <li><a href="./about.html">AboutUs</a> </li>
+                        <li><a href="./podcast.html">Podcasts</a> </li>
+                        <li><a href="./login.html">LogIn</a> </li>
 
                     </ul>           
                    
@@ -43,140 +51,168 @@
 
         </nav>
         <!-- nav ends here  -->
-
-        <div><form action="index.html" method="post">
-            <label for="top-search">
-                <!-- top search  -->
-                <input type="search" id="top-search"  placeholder="Search and hit enter..." required>
+        
+        <div class="topsearch__input__container" id="searchbar">
+            <form class="topinput__form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search & hit enter" id="top__search" class="search--bar__input">
                 
-                <!-- hidden top search label text   -->
-                <span>search</span> 
-            </label>
-          </form>
+                <button id="search-btn" type="submit" aria-label="search button" class="search--bar__button"><img src="./images/mainIcons/search.png" alt="search icon"></button>
+            </form>
         </div>
+        
         <!-- div containing social accounts  -->
 
-        <div>
+        <!-- top__social--wrapper -->
+        <div class="social">
             <!-- unorder list for social media links  -->
-            <ul>
-                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+            <ul class="sociallist">
+                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
             </ul></div>
-        <div><a href="profile.html">Profile</a></div>
+        <div class="top-profile"><a href="profile.html">Profile</a></div>
+        <!-- hamburger bar for responsiveness  -->
+
+        <div class="hamburger-bar" id="bar">
+            <img src="./images/mainIcons/hamburger.png" alt="twitter icon" width="50" height="50">
+        </div>
+
+
+        <!-- mobile btn  -->
+        <div class="mobile">
+            <button class="search-button-mobile"  aria-label="search button"><img src="./images/mainIcons/search.png" alt="mobile search" id="searchbtn--mob"> </button>
+            <div class="profile__button--mobile"><a href="profile.html"><img src="./images/mainIcons/profile.png" alt="profile"></a></div>
+        </div>
     </header>
-    <!-- header ends here / -->  
-    
-    <!-- main section starts here  -->
-    <main> 
-        <section>
-            <h1>Profile</h1>
-            <div>
+    <!-- header ends here / -->
+
+    <!-- side bar  -->
+    <div class="side__navbar">
+        <div class="close__btn"><img src="./images/mainIcons/close.png" alt="close botton"></div>
+        <ul class="sidenav__unorderd">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+  
+            <li><a href="./blog.html">Blog</a> </li>
+            <li><a href="./contact.html">ContactUs</a> </li>
+            <li><a href="./podcast.html">Podcasts</a> </li>
+            <li><a href="./login.html">LogIn</a> </li>
+            <li><a href="./profile.html">Profile</a></li>
+            
+        </ul> 
+    </div>
 
 
-                <form action="#" method="post">
-                    <div>
-                        <label for="firstname">First Name  </label>
-                        <input name="firstname" type="text" placeholder="first name" id="firstname" required>
-                    </div>
-                    <div>
-                        <label for="lastname">Last Name</label>
-                        <input name="lastname" type="text" placeholder="last name" id="lastname" required>
-                    </div>
-                    <div>
-                        <label for="password">Password </label>
-                        <input name="password" type="password" placeholder="Password" id="password" required>
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input name="email" type="text" placeholder="Email" id="email" required>
-                    </div>
-                    <div>
-                        <label for="gender">Gender</label>
-                        <select name="gender" id="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+    <section class="profile__sec">
+        <h2>Profile</h2>
+        <div class="profile__sec-wrapper">
 
-                        </select>
-                    </div>
-                    <div>
 
-                        <button>Edit Profile</button>
-
-                    </div>
-                </form>
-
-            </div>
-        </section>
-        <!--  section for subscription starts here  -->
-        <section>
-            <div>
-                <h2>SignUP Today</h2>
+            <form id="profile--form">
                 <div>
-                    <!-- subscription form  -->
-                    <form action="index.html" method="post">
-                        <label for="subscribe">
-                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required>                
-                            <button id="sub-btn">Subscribe</button>
-
-                        </label>
-                    </form>
+                    <label for="firstname">First Name <span class="visually-hidden">label for firstname</span> </label>
+                    <input name="firstname" type="text" placeholder="Surafel" id="firstname" disabled>
                 </div>
-            </div>    
-        </section>
-        <!-- subscription section ends here  -->
-    </main>
-    <!-- main ends here  -->
-
-
-    <!-- footer starts here  -->
-
-    <footer>
-        <!-- footer columns  -->
-        <div>
-            <div>
-                <p>Pages</p>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="signup.html">Register</a>
-            </div>
-            <div>
-                <!-- contact us info  -->
-                <address>
-                    <p>Contact Us:</p>
-                    <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
-                    <p>+251921581691</p>
-                    <p>AAiT</p>
-                </address>
-            </div>
-            <div>
-                <p>Information: </p>
-                <a href="about.html">AboutUs</a>
-                <a href="blog.html">News</a>
-            </div>
-            <div>
-                <p>Social Media links</p>
                 <div>
+                    <label for="lastname">Last Name <span class="visually-hidden">label for lastname</span> </label>
+                    <input name="lastname" type="text" placeholder="Workayehu" id="lastname" disabled>
+                </div>
+                <div>
+                    <label for="password">Password <span class="visually-hidden">label for password</span></label>
+                    <input name="password" type="password" placeholder="*********" id="password" disabled>
+                </div>
+                <div>
+                    <label for="email">Email <span class="visually-hidden">label for email</span></label>
+                    <input name="email" type="text" placeholder="surafelwork32@gmail.com" id="email" disabled>
+                </div>
+                <div>
+                    <label for="gender">Gender <span class="visually-hidden">label for gender</span></label>
+                    <select name="gender" id="gender" disabled>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+
+                    </select>
+                </div>
+                <div class="btn">
+
+                    <button class="edit-pp" disabled>Edit Profile</button>
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+    
+    <section class="subs">
+        <div class="subs-container">
+            <h2>SignUP Today</h2>
+            <div class="subsc">
+                <!-- subscription form  -->
+                <form action="index.html" method="post">
+                    <label for="subscribe">
+                        <input type="email" id="subscribe" placeholder="email@gmail.com" required >
+                          <!-- visually hidden label for subscription  -->
+                        <span class="visually-hidden">label for subscription</span> 
+                      
+                        <button class="sub-submit">Subscribe</button>
+
+                    </label>
+                </form>
+            </div>
+        </div>    
+    </section>
+    <!-- subscription section ends here  -->
+
+
+<!-- footer starts here  -->
+
+    <footer class="footer">
+        <!-- footer columns  -->
+        <div class="column">
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./podcast.html">Podcast</a>
+                <a href="./signup.html">Register</a>
+            </div>
+            <div class="contact">
+                <!-- contact us info  -->
+                <h3>Contact Us:</h3>
+                <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+                <h4>+251921581691</h4>
+                <h4>AAiT</h4>
+            </div>
+            <div class="info">
+                <h3>Information: </h3>
+                <a href="./about.html">AboutUs</a>
+                <a href="./blog.html">News</a>
+            </div>
+            <div class="footer social__container">
+                <h3>Social Media links</h3>
+                <div class="social">
                     <!-- unorder list for social media links  -->
-                    <ul>
-                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+                    <ul class="footer__sociallist">
+                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="./images/mainIcons/google-play.png" alt="googleplay png " width="96" height="33">
-                    <img src="./images/mainIcons/app-store.png" alt="appstore png" width="96" height="33">     
+                <div class="footericon">
+                    <img src="./images/mainIcons/google-play.png" alt="googleplay png ">
+                    <img src="./images/mainIcons/app-store.png" alt="appstore png">    
                 </div>
             </div>
         </div>
         <!-- coppyright  -->
-        <p>&copy; Copyright 2022</p>
+        <p class="copyright__last">&copy; Copyright 2022</p>
     </footer>
-    <!-- footer ends here  -->
+<!-- footer ends here  -->
 
+
+<script src="./javaScript/script.js"></script>
 </body>
 </html>

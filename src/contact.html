@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPod</title>
+   
+    <!-- custom css link  -->
+<link rel="icon" type="image/x-icon" href="./images/mainIcons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/contact.css">
+    
+    
 
 </head>
 <body>
+
     <!--header starts here--> 
-    <header>
+    <header class="header">
         <!-- logo of the company  -->
-        <div><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="300" height="163"></div>
+        <div class="logo"><a href="../index.html"><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="90" height="90" ></a></div>
         
         <!-- nav bar starts here  -->
-        <nav>
+        <nav class="navbar">
             <!-- unordered list of nav starts here  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <ul class="li">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
 
                 <!-- dropdown page   -->
-                <li><a href="#">Pages</a>
+                <li id="pp"><a href="#">Pages </a> <img src="./images/mainIcons/drop.png" alt="drop down" width="15px" height="15px">
 
                     <!-- unordered list for dropdon  -->
-                    <ul>
+                    <ul class="dropdown">
                         
-                        <li><a href="blog.html">Blog</a> </li>
-                        <li><a href="contact.html">ContactUs</a> </li>
-                        <li><a href="about.html">AboutUs</a> </li>
-                        <li><a href="podcast.html">Podcasts</a> </li>
-                        <li><a href="login.html">LogIn</a> </li>
+                        <li><a href="./blog.html">Blog</a> </li>
+                        <li><a href="./contact.html">ContactUs</a> </li>
+                        <li><a href="./about.html">AboutUs</a> </li>
+                        <li><a href="./podcast.html">Podcasts</a> </li>
+                        <li><a href="./login.html">LogIn</a> </li>
 
                     </ul>           
                    
@@ -43,154 +51,185 @@
 
         </nav>
         <!-- nav ends here  -->
-
-        <div><form action="index.html" method="post">
-            <label for="top-search">
-                <!-- top search  -->
-                <input type="search" id="top-search"  placeholder="Search and hit enter..." required>
-               
-                <!-- hidden top search label text   -->
-                <span>search</span> 
-            </label>
-          </form>
+        
+        <div class="topsearch__input__container" id="searchbar">
+            <form class="topinput__form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search & hit enter" id="top__search" class="search--bar__input">
+                
+                <button id="search-btn" type="submit" aria-label="search button" class="search--bar__button"><img src="./images/mainIcons/search.png" alt="search icon"></button>
+            </form>
         </div>
+        
         <!-- div containing social accounts  -->
 
-        <div>
+        <!-- top__social--wrapper -->
+        <div class="social">
             <!-- unorder list for social media links  -->
-            <ul>
-                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+            <ul class="sociallist">
+                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
             </ul></div>
-        <div><a href="profile.html">Profile</a></div>
+        <div class="top-profile"><a href="profile.html">Profile</a></div>
+        <!-- hamburger bar for responsiveness  -->
+
+        <div class="hamburger-bar" id="bar">
+            <img src="./images/mainIcons/hamburger.png" alt="twitter icon" width="50" height="50">
+        </div>
+
+
+        <!-- mobile btn  -->
+        <div class="mobile">
+            <button class="search-button-mobile"  aria-label="search button"><img src="./images/mainIcons/search.png" alt="mobile search" id="searchbtn--mob"> </button>
+            <div class="profile__button--mobile"><a href="profile.html"><img src="./images/mainIcons/profile.png" alt="profile"></a></div>
+        </div>
     </header>
     <!-- header ends here / -->
 
+    <!-- side bar  -->
+    <div class="side__navbar">
+        <div class="close__btn"><img src="./images/mainIcons/close.png" alt="close botton"></div>
+        <ul class="sidenav__unorderd">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+  
+            <li><a href="./blog.html">Blog</a> </li>
+            <li><a href="./contact.html">ContactUs</a> </li>
+            <li><a href="./podcast.html">Podcasts</a> </li>
+            <li><a href="./login.html">LogIn</a> </li>
+            <li><a href="./profile.html">Profile</a></li>
+            
+        </ul> 
+    </div>
+
     <!-- main body starts here  -->
     <main>
-        <!-- contact section1 starts here  -->
-        <section>
-            <h1>Contact</h1>
-            <div>
-                <div><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Addis Ababa University | Natural Sciences Campus&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.gachacute.com/">www.gachacute.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
-            </div>
-        </section>
-        <!-- section1 ends here  -->
+    <!-- contact section1 starts here  -->
+    <section class="contact__sec1">
+        <h2>Contact</h2>
+        <div class="contact__map--container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Addis Ababa University | Natural Sciences Campus&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.gachacute.com/">www.gachacute.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+        </div>
+    </section>
+    <!-- section1 ends here  -->
 
-        <!-- contact section2 starts here  -->
-        <section>
-            <div>
-                <article>
-                    <h2>Contact Info:</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab impedit assumenda dignissimos temporibus quaerat dolores quisquam magni delectus obcaecati ipsam animi accusamus reprehenderit odio labore, laboriosam debitis, aut exercitationem?</p>
-                </article>
-            </div>
-            <div>
-                <address>
-                    <p> Address : Arada street, Addis Ababa</p>
-                    <p>Phone Number: +251921581691</p>
-                    <p>Email: <a href="mailto:surawork32@gmail.com">surawork32@gmail.com</a></p>
-                    
-                </address>
-            </div>
-        </section>
-        <!-- section2 ends here  -->
+    <!-- contact section2 starts here  -->
+    <section class="contact__sec2">
+        <div class="contact__sec2--wrapper1"> 
+            <h2>Contact Info:</h2>
+        
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae laborum praesentium ad! Facere maxime laboriosam quae placeat nostrum et, aut quidem omnis, nam veritatis facilis dolores autem, rem corrupti? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ab commodi nostrum aliquam optio maiores expedita obcaecati odit nobis iste delectus quia molestias voluptatem in, assumenda maxime magnam pariatur laborum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab impedit assumenda dignissimos temporibus quaerat dolores quisquam magni delectus obcaecati ipsam animi accusamus reprehenderit odio labore, laboriosam debitis, aut exercitationem?</p>
+        </div>
+        <div class="contact__sec2--wrapper2">
+            <address class="wrapper__contact--add">
+                <p> <span> Address :</span> Arada street, Addis Ababa</p>
+                <p><span>Phone Number:</span> +251921581691</p>
+                <p><span>Email: </span><a href="mailto:surawork32@gmail.com">surawork32@gmail.com</a></p>
+                
+            </address>
+        </div>
+    </section>
+    <!-- section2 ends here  -->
 
-        <!-- contact section3 starts here  -->
-        <section>
-            <div>
-                <form action="#" method="post">
-                    <div>
-                        <label for="name"><span>name</span></label>
-                        <input name="name" type="text" placeholder="Your name" id="name" required>
-                    </div>
-                    <div>
-                        <label for="email"><span>email</span></label>
-                        <input name="email" type="text" placeholder="Email" id="email" required>
-                    </div>
-                    <div>
-                        <label for="textarea"><span>your message</span></label>
-                        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    </div>
-                    <div>
-                        <button>Send Message</button>
+    <!-- contact section3 starts here  -->
+    <section class="contact-sec3">
+        <div class="contact-wrapper">
+            <form id="form">
+                <div class="input-control">
+                    <label for="name"><span class="visually-hidden">label input for name</span></label>
+                    <input name="name" type="text" placeholder="Your name" id="name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email"><span class="visually-hidden">label input for email</span></label>
+                    <input name="email" type="text" placeholder="Email" id="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="textarea"><span class="visually-hidden">label input for textarea</span></label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <div class="error"></div>
+                </div>
+                <div class="btn">
+                    <button class="contact-btn">Send Message</button>
 
-                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- contact section3 ends here  -->
+
+    <!-- section for subscription starts here  -->
+    <section class="subs">
+        <div class="subs-container">
+            <h2>SignUP Today</h2>
+            <div class="subsc">
+                <!-- subscription form  -->
+                <form action="index.html" method="post">
+                    <label for="subscribe">
+                        <input type="email" id="subscribe" placeholder="email@gmail.com" required>
+                        <!-- <span class="visually-hidden">label for subscription</span> visually hidden label for subscription  -->
+                        <button class="sub-submit">Subscribe</button>
+
+                    </label>
                 </form>
             </div>
-        </section>
-        <!-- contact section3 ends here  -->
-
-        <!-- section for subscription starts here  -->
-        <section>
-            <div>
-                <h2>SignUP Today</h2>
-                <div>
-                    <!-- subscription form  -->
-                    <form action="index.html" method="post">
-                        <label for="subscribe">
-                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required>
-                            <button id="sub-btn">Subscribe</button>
-
-                        </label>
-                    </form>
-                </div>
-            </div>    
-        </section>
-        <!-- subscription section ends here  -->
+        </div>    
+    </section>
+    <!-- subscription section ends here  -->
     </main>
-    <!-- main ends here  -->
-
+    <!-- main body ends here  -->
 
 <!-- footer starts here  -->
 
-    <footer>
-        <!-- footer columns  -->
-        <div>
-            <div>
-                <p>Pages</p>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="signup.html">Register</a>
+<footer class="footer">
+    <!-- footer columns  -->
+    <div class="column">
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./podcast.html">Podcast</a>
+            <a href="./signup.html">Register</a>
+        </div>
+        <div class="contact">
+            <!-- contact us info  -->
+            <h3>Contact Us:</h3>
+            <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+            <h4>+251921581691</h4>
+            <h4>AAiT</h4>
+        </div>
+        <div class="info">
+            <h3>Information: </h3>
+            <a href="./about.html">AboutUs</a>
+            <a href="./blog.html">News</a>
+        </div>
+        <div class="footer social__container">
+            <h3>Social Media links</h3>
+            <div class="social">
+                <!-- unorder list for social media links  -->
+                <ul class="footer__sociallist">
+                    <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                    <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
+                </ul>
             </div>
-            <div>
-                <!-- contact us info  -->
-                <address>
-                    <p>Contact Us:</p>
-                    <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
-                    <p>+251921581691</p>
-                    <p>AAiT</p>
-                </address>
-            </div>
-            <div>
-                <p>Information: </p>
-                <a href="about.html">AboutUs</a>
-                <a href="blog.html">News</a>
-            </div>
-            <div>
-                <p>Social Media links</p>
-                <div>
-                    <!-- unorder list for social media links  -->
-                    <ul>
-                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./images/mainIcons/google-play.png" alt="googleplay png " width="96" height="33">
-                    <img src="./images/mainIcons/app-store.png" alt="appstore png" width="96" height="33"> 
-                </div>
+            <div class="footericon">
+                <img src="./images/mainIcons/google-play.png" alt="googleplay png ">
+                <img src="./images/mainIcons/app-store.png" alt="appstore png">    
             </div>
         </div>
-        <!-- coppyright  -->
-        <p>&copy; Copyright 2022</p>
-    </footer>
-    <!-- footer ends here  -->
+    </div>
+    <!-- coppyright  -->
+    <p class="copyright__last">&copy; Copyright 2022</p>
+</footer>
+<!-- footer ends here  -->
 
+<script src="./javaScript/script.js"></script>
+<script src="./javaScript/contact.js"></script>
 </body>
 </html>

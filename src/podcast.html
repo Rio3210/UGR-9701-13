@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPod</title>
+   
+    <!-- custom css link  -->
+<link rel="icon" type="image/x-icon" href="./images/mainIcons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/podcast.css">
+    
+    
 
 </head>
 <body>
+
     <!--header starts here--> 
-    <header>
+    <header class="header">
         <!-- logo of the company  -->
-        <div><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="300" height="163"></div>
+        <div class="logo"><a href="../index.html"><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="90" height="90" ></a></div>
         
         <!-- nav bar starts here  -->
-        <nav>
+        <nav class="navbar">
             <!-- unordered list of nav starts here  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <ul class="li">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
 
                 <!-- dropdown page   -->
-                <li><a href="#">Pages</a>
+                <li id="pp"><a href="#">Pages </a> <img src="./images/mainIcons/drop.png" alt="drop down" width="15px" height="15px">
 
                     <!-- unordered list for dropdon  -->
-                    <ul>
+                    <ul class="dropdown">
                         
-                        <li><a href="blog.html">Blog</a> </li>
-                        <li><a href="contact.html">ContactUs</a> </li>
-                        <li><a href="about.html">AboutUs</a> </li>
-                        <li><a href="podcast.html">Podcasts</a> </li>
-                        <li><a href="login.html">LogIn</a> </li>
+                        <li><a href="./blog.html">Blog</a> </li>
+                        <li><a href="./contact.html">ContactUs</a> </li>
+                        <li><a href="./about.html">AboutUs</a> </li>
+                        <li><a href="./podcast.html">Podcasts</a> </li>
+                        <li><a href="./login.html">LogIn</a> </li>
 
                     </ul>           
                    
@@ -43,284 +51,345 @@
 
         </nav>
         <!-- nav ends here  -->
-
-        <div><form action="index.html" method="post">
-            <label for="top-search">
-                <!-- top search  -->
-                <input type="search" id="top-search"  placeholder="Search and hit enter..." required>
+        
+        <div class="topsearch__input__container" id="searchbar">
+            <form class="topinput__form">
+                <label for="search"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" placeholder="search & hit enter" id="top__search" class="search--bar__input">
                 
-                <!-- hidden top search label text   -->
-                <span>search</span> 
-            </label>
-          </form>
+                <button id="search-btn" type="submit" aria-label="search button" class="search--bar__button"><img src="./images/mainIcons/search.png" alt="search icon"></button>
+            </form>
         </div>
+        
         <!-- div containing social accounts  -->
 
-        <div>
+        <!-- top__social--wrapper -->
+        <div class="social">
             <!-- unorder list for social media links  -->
-            <ul>
-                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+            <ul class="sociallist">
+                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
             </ul></div>
-        <div><a href="profile.html">Profile</a></div>
+        <div class="top-profile"><a href="./profile.html">Profile</a></div>
+        <!-- hamburger bar for responsiveness  -->
+
+        <div class="hamburger-bar" id="bar">
+            <img src="./images/mainIcons/hamburger.png" alt="twitter icon" width="50" height="50">
+        </div>
+
+
+        <!-- mobile btn  -->
+        <div class="mobile">
+            <button class="search-button-mobile"  aria-label="search button"><img src="./images/mainIcons/search.png" alt="mobile search" id="searchbtn--mob"> </button>
+            <div class="profile__button--mobile"><a href="profile.html"><img src="./images/mainIcons/profile.png" alt="profile"></a></div>
+        </div>
     </header>
     <!-- header ends here / -->
 
-    <!-- main section starts here  -->
-    <main>
-        <section>
-            <h1>Podcasts</h1>
-
-            <div>
-                <div><img src="./images/BackgroundImages/1.jpg" alt="podcast guest" width="400" height="400"></div>
-                <div>
-                    <p>Released date</p>
-                    <p>Title</p>
-                    <audio src="./audios/dummy1.mp3" controls></audio>
-                    <p> If you only have 24 hours a day, your success will depend up on how you use the 24.</p>
-                </div>
-            </div>
+    <!-- side bar  -->
+    <div class="side__navbar">
+        <div class="close__btn"><img src="./images/mainIcons/close.png" alt="close botton"></div>
+        <ul class="sidenav__unorderd">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+  
+            <li><a href="./blog.html">Blog</a> </li>
+            <li><a href="./contact.html">ContactUs</a> </li>
+            <li><a href="./podcast.html">Podcasts</a> </li>
+            <li><a href="./login.html">LogIn</a> </li>
+            <li><a href="./profile.html">Profile</a></li>
             
-        </section>
+        </ul> 
+    </div>
+    <section class="podcast__sec--first">
+        <h1>Podcasts</h1>
 
-        <section>
-            <h2>Latest Episodes</h2>
-            <div>
-                
+        <div class="podcast__sec1--wrapper">
+            <div class="img__container"><img src="./images/BackgroundImages/1.jpg" alt="podcast guest"></div>
+            <div class="pod--content__container">
+                <p>Released date</p>
+                <details class="transcription__details">
+                    <summary>Transcribe</summary>
+                    <p>If you only have 24hours in a day. How do you spend that</p>
+                  </details>
+                <h3>Title</h3>
+                <audio src="./audios/dummy-audio.mp3" controls></audio>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="podcast-sec2">
+        <h2>Latest Episodes</h2>
+        <div class="sec2-wrapper">
+            
+                    
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/entertaiment.jpg" alt="people dancing">
                         
-                <div>
-                    <div>
-                        <img src="./images/entertaiment.jpg" alt="people dancing" width="400" height="400">
                     </div>
                     <span>Entertainment</span>
                     <p>A great time with artist Aster Awoke</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/health.jpg" alt="mask covered by ethipian flag" width="400" height="400">
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/health.jpg" alt="mask covered by ethipian flag">
+                        
                         
                     </div>
                     <span>Health</span>
                     <p>Discussion on the impact of Covid with Dr. Dagnachew Ayele</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/sport.jpg" alt="ball covered by ethipian flag" width="400" height="400">                            
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/sport.jpg" alt="ball covered by ethipian flag">
+                        
+                        
                     </div>
                     <span>Sport</span>
                     <p>A great time with former sport Instructor Shimeles Gudeta</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/business.jpg" alt="business showing graph" width="400" height="400">                            
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/business.jpg" alt="business showing graph">
+                        
+                        
                     </div>
                     <span>Business</span>
                     <p>Discussion about <q> Advanced banking system</q></p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/technology.jpg" alt="a girl with tablet phone" width="400" height="400">                            
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/technology.jpg" alt="a girl with tablet phone">
+                        
+                        
                     </div>
                     <span>Technology</span>
                     <p>Emerging Technologies in our country.</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/agriculture.jpg" alt="trucktor watering plants" width="400" height="400">
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/agriculture.jpg" alt="trucktor watering plants">
+                        
                         
                     </div>
                     <span>Agriculture</span>
                     <p>A great time with Mamo Wolde,instructor at Addis Ababa University </p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/entertaiment.jpg" alt="music guest" width="400" height="400">                            
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/entertaiment.jpg" alt="music guest">
+                        
+                        
                     </div>
                     <span>Music</span>
                     <p>Dj. Akuna</p>
-                    
-            
                 
-            </div>
-            </div>
-        </section>
         
-        <!-- podcast section2 ends here  -->
+            
+        </div>
+        </div>
+    </section>
+    
+    <!-- podcast section2 ends here  -->
 
-        <!-- section three starts here  -->
-        <section>
-            <h2>Business Episodes</h2>
-            <div>
-                    <div>
-                        <div>
-                            <img src="./images/BackgroundImages/buss-1.jpg" alt="shadow of people gathered" width="400" height="400">
-                        </div>
-                        <span>New StartUps</span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sit od</p>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./images/BackgroundImages/buss-2.jpg" alt="busineess analyst" width="400" height="400">        
-                        </div>
-                        <span>Wealth</span>
-                        <p>Discussion on banks</p>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./images/BackgroundImages/buss-3.png" alt="bussiness cartoon" width="400" height="400">            
-                        </div>
-                        <span>Investement</span>
-                        <p>Investement for country development</p>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./images/BackgroundImages/buss-3.png" alt="business showing graph" width="400" height="400">
-                            
-                        </div>
-                        <span>Business</span>
-                        <p>Discussion about <em> Advanced banking system</em></p>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./images/BackgroundImages/buss-2.jpg" alt="a girl with tablet phone" width="400" height="400">                           
-                        </div>
-                        <span>Womens involvment</span>
-                        <p>impowering womens for the development of the country</p>
-                    </div>
+    <!-- section three starts here  -->
+    <section class="podcast-sec3">
+        <h2>Business Episodes</h2>
+        <div class="sec3-wrapper">
+            
                     
-            </div>
-        </section>
-        <!-- podcast section three ends here  -->
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/buss-1.jpg" alt="shadow of people gathered">
+                        
+                    </div>
+                    <span>New StartUps</span>
+                    <p>We will talk about the new start ups and the ups and downs</p>
+                </div>
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/buss-2.jpg" alt="busineess analyst">
+                        
+                        
+                    </div>
+                    <span>Wealth</span>
+                    <p>Discussion on banks</p>
+                </div>
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/buss-3.png" alt="bussiness cartoon">
+                        
+                        
+                    </div>
+                    <span>Investement</span>
+                    <p>Investement for country development</p>
+                </div>
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/buss-3.png" alt="business showing graph">
+                        
+                        
+                    </div>
+                    <span>Business</span>
+                    <p>Discussion about <em> Advanced banking system</em></p>
+                </div>
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/buss-2.jpg" alt="a girl with tablet phone">
+                        
+                        
+                    </div>
+                    <span>Womens involvment</span>
+                    <p>impowering womens for the development of the country</p>
+                </div>
+                
+        </div>
+    </section>
+    <!-- podcast section three ends here  -->
 
-        <!-- section four starts here  -->
-        <section>
-            <h2>Sport Episodes</h2>
-            <div>    
-                <div>
-                    <div>
-                        <img src="./images/BackgroundImages/football.jpg" alt="people dancing" width="400" height="400">
+    <!-- section four starts here  -->
+    <section class="podcast-sec4">
+        <h2>Sport Episodes</h2>
+        <div class="sec4-wrapper">
+            
+                    
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/football.jpg" alt="people dancing">
+                        
                     </div>
                     <span>Football</span>
                     <p>World Cup</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/personImg/jordan.jpg" alt="mask covered by ethipian flag" width="400" height="400">                   
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/personImg/jordan.jpg" alt="mask covered by ethipian flag">
+                        
+                        
                     </div>
                     <span>Basketball</span>
-                    <p>Discussion on the impact of Covid with Dr. Dagnachew Ayele</p>
+                    <p>We will talk about Basketball</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/BackgroundImages/volleyball.jpg" alt="ball covered by ethipian flag" width="400" height="400">
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/volleyball.jpg" alt="ball covered by ethipian flag">
+                        
+                        
                     </div>
                     <span>Volleyball</span>
                     <p>A great time with former sport Instructor Shimeles Gudeta</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/BackgroundImages/bicycle.jpg" alt="business showing graph" width="400" height="400">                          
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/bicycle.jpg" alt="business showing graph">
+                        
+                        
                     </div>
                     <span>Bicycle</span>
                     <p>Discussion about <q> Advanced banking system</q></p>
                 </div>
-                <div>
-                    <div>
-                        <img src="./images/BackgroundImages/swimming.jpg" alt="a girl with tablet phone" width="400" height="400">
+                <div class="common">
+                    <div class="inner">
+                        <img src="./images/BackgroundImages/swimming.jpg" alt="a girl with tablet phone">
+                        
+                        
                     </div>
                     <span>Swimming</span>
                     <p>Talks about swimming and competetion in the world</p>
                 </div>
-                    
                 
-            </div>
-            </div>
-        </section>
+            
+        </div>
+        </div>
+    </section>
+    
+    <section class="podcast__section--lastrelease">
         
-        <section>
-            
 
-            <div>
-                <div><img src="./images/BackgroundImages/1.jpg" alt="podcast guest"  width="400" height="400"></div>
-                <div>
-                    <p>Released date</p>
-                    <p>Title</p>
-                    <audio src="./audios/dummy2.mp3" controls></audio>
-                </div>
+        <div class="section__release--container">
+            <div class="img-container"><img src="./images/BackgroundImages/1.jpg" alt="podcast guest"></div>
+            <div class="pod--content__container">
+                <p>Released date</p>
+                <details class="transcription__details">
+                    <summary>Transcribe</summary>
+                    <p>If you only have 24hours in a day. How do you spend that</p>
+                  </details>
+                <h3>Title</h3>
+                <audio src="./audios/dummy-audio.mp3" controls></audio>
             </div>
-            
-        </section>  
-        <!-- section for subscription starts here  -->
-        <section>
-            <div>
-                <h2>SignUP Today</h2>
-                <div>
-                    <!-- subscription form  -->
-                    <form action="index.html" method="post">
-                        <label for="subscribe">
-                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required> 
-                            <button id="sub-btn">Subscribe</button>
+        </div>
+        
+    </section>  
+    <section class="subs">
+        <div class="subs-container">
+            <h2>SignUP Today</h2>
+            <div class="subsc">
+                <!-- subscription form  -->
+                <form action="index.html" method="post">
+                    <label for="subscribe">
+                        <input type="email" id="subscribe" placeholder="email@gmail.com" required >
+                        <!-- <span class="visually-hidden">label for subscription</span> visually hidden label for subscription  -->
+                        <button class="sub-submit">Subscribe</button>
 
-                        </label>
-                    </form>
-                </div>
-            </div>    
-        </section>
-        <!-- subscription section ends here  -->
-    </main>
-    <!-- main ends here  -->
+                    </label>
+                </form>
+            </div>
+        </div>    
+    </section>
+    <!-- subscription section ends here  -->
 
 
     <!-- footer starts here  -->
 
-    <footer>
+    <footer class="footer">
         <!-- footer columns  -->
-        <div>
-            <div>
+        <div class="column">
+            <div class="pages">
                 <h3>Pages</h3>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="signup.html">Register</a>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./podcast.html">Podcast</a>
+                <a href="./signup.html">Register</a>
             </div>
-            <div>
+            <div class="contact">
                 <!-- contact us info  -->
-                <address>
-                    <p>Contact Us:</p>
-                    <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
-                    <p>+251921581691</p>
-                    <p>AAiT</p>
-                </address>
+                <h3>Contact Us:</h3>
+                <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+                <h4>+251921581691</h4>
+                <h4>AAiT</h4>
             </div>
-            <div>
-                <p>Information: </p>
-                <a href="about.html">AboutUs</a>
-                <a href="blog.html">News</a>
+            <div class="info">
+                <h3>Information: </h3>
+                <a href="./about.html">AboutUs</a>
+                <a href="./blog.html">News</a>
             </div>
-            <div>
-                <p>Social Media links</p>
-                <div>
+            <div class="footer social__container">
+                <h3>Social Media links</h3>
+                <div class="social">
                     <!-- unorder list for social media links  -->
-                    <ul>
-                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
+                    <ul class="footer__sociallist">
+                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="./images/mainIcons/google-play.png" alt="googleplay png " width="96" height="33">
-                    <img src="./images/mainIcons/app-store.png" alt="appstore png" width="96" height="33">     
+                <div class="footericon">
+                    <img src="./images/mainIcons/google-play.png" alt="googleplay png ">
+                    <img src="./images/mainIcons/app-store.png" alt="appstore png">    
                 </div>
             </div>
         </div>
         <!-- coppyright  -->
-        <p>&copy; Copyright 2022</p>
+        <p class="copyright__last">&copy; Copyright 2022</p>
     </footer>
-    <!-- footer ends here  -->
-  
+    <!-- footer ends here  -->   
+
+    <script src="./javaScript/script.js"></script>
 </body>
 </html>
     

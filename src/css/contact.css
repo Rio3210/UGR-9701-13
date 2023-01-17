@@ -1,0 +1,158 @@
+.contact__sec1{
+    margin: 2rem auto;
+    background-image: url(../images/BackgroundImages/patterns.png);
+    background-repeat:repeat ;
+}
+section{
+    background-image: url("../images/BackgroundImages/patterns.png");
+    background-position: center;
+    background-repeat:repeat;
+}
+.contact__sec1 h2{
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: rgb(223, 20, 206);
+}
+.contact__map--container{
+    width: 80%;
+    margin: 1rem auto;
+    box-shadow: -3px 4px 16px -3px rgba(0,0,0,0.75);
+}
+.contact__sec2{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    margin: 2rem auto;
+    padding-top: 12px;
+    
+}
+.contact__sec2--wrapper1 h2{
+    margin: 0 0 1rem 0;
+}
+.contact__sec2--wrapper1 p{
+    text-align: justify;
+    color: rgba(22, 21, 21, 0.692);
+}
+.contact-wrapper {
+    box-shadow: 0 0 5px 7px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0rem;
+    width: 45%;
+    border-radius: 2rem;
+    background-color: #fff;
+    margin: 4rem auto;
+ }
+ .wrapper__contact--add p{
+    color: rgba(19, 18, 18, 0.774);
+ }
+ .wrapper__contact--add span{
+    padding-right: 3px;
+    font-size: 18px;
+    font-weight: 550;
+ }
+ .wrapper__contact--add a{
+    color: black;
+    text-decoration: underline;
+ }
+
+.contact-wrapper > form input {
+    width: 60%;
+    height: 2.75rem;
+    margin: 1rem auto;
+
+}
+.contact-wrapper > form input::placeholder {
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.contact-wrapper> form > div > * {
+    display: block;
+}
+.contact-wrapper> form > div > textarea{
+    width: 60%;
+    height: 6rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+.contact-wrapper> form > div > textarea::placeholder{
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-size: 1.1rem;
+        
+}
+
+.input-control input:focus {
+    outline: none;
+    
+}
+.input-control{
+    text-align: center;
+    font-size: 2rem;
+}
+.input-control.success input {
+    border-color: #09c372;
+}
+.input-control.success textarea{
+    border-color: #09c372;
+}
+.input-control.error input {
+    border-color: #dd0d36;
+}
+.input-control.error textarea {
+    border-color: #dd0d36;
+}
+.input-control .error {
+    margin-bottom: 9px;
+    color: #ee0130;
+    font-size: 16px !important;
+    height: 13px;
+}
+.btn {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+button.contact-btn {
+    margin-top: 1rem;
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: black;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+button.contact-btn:hover{
+        cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .contact-wrapper {
+        
+        width: 55%;
+        
+     }
+}
+@media screen and (max-width:700px){
+    .contact-wrapper {
+        
+        width: 65%;
+        
+     }
+}
+@media screen and (max-width:430px){
+    .contact-wrapper {
+        
+        width: 75%;
+        
+     }
+}
+@media screen and (max-width:340px){
+    .contact-wrapper {
+        
+        width: 88%;
+        
+     }
+}
