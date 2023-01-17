@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshPod</title>
+   
+    <!-- custom css link  -->
+<link rel="icon" type="image/x-icon" href="./src/images/mainIcons/favicon.ico">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/homepage.css">
+    
+    
+
+</head>
+<body>
+
+    <!--header starts here--> 
+    <header class="header">
+        <!-- logo of the company  -->
+        <div class="logo"><a href="index.html"><img src="./src/images/mainIcons/mainicon.png" alt="podcast logo" width="90" height="90" ></a></div>
+        
+        <!-- nav bar starts here  -->
+        <nav class="navbar">
+            <!-- unordered list of nav starts here  -->
+            <ul class="li">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./src/about.html">About</a></li>
+                <!-- dropdown page   -->
+                <li id="pp"><a href="#">Pages </a> <img src="./src/images/mainIcons/drop.png" alt="drop down" width="15px" height="15px">
+
+                    <!-- unordered list for dropdon  -->
+                    <ul class="dropdown">
+                        
+                        <li><a href="./src/blog.html">Blog</a> </li>
+                        <li><a href="./src/contact.html">ContactUs</a> </li>
+                        <li><a href="./src/about.html">AboutUs</a> </li>
+                        <li><a href="./src/podcast.html">Podcasts</a> </li>
+                        <li><a href="./src/login.html">LogIn</a> </li>
+
+                    </ul>           
+                   
+                </li>
+                <!-- dropdown ends here  -->
+
+                <li><a href="contact.html">Contact</a></li>         
+            </ul>   
+             <!-- unordered list of nav ends here  -->   
+
+        </nav>
+        <!-- nav ends here  -->
+        
+        <div class="topsearch__input__container" id="searchbar">
+            
+            <form class="topinput__form">
+                <label for="search"><span class="visually-hidden">Label for the input</span>
+                <input type="text" placeholder="search & hit enter" id="top__search" class="search--bar__input">
+                </label>
+                <button id="search-btn" type="submit" aria-label="search button" class="search--bar__button"><img src="./src/images/mainIcons/search.png" alt="search icon"></button>
+            </form>
+        </div>
+        
+        <!-- div containing social accounts  -->
+
+        <!-- top__social--wrapper -->
+        <div class="social">
+            <!-- unorder list for social media links  -->
+            <ul class="sociallist">
+                <li><a href="https://www.facebook.com/rio3210_"> <img src="./src/images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/rio3210_"><img src="./src/images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                <li><a href="https://www.twitter.com/Rio3210_"><img src="./src/images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                <li><a href="https://www.youtube.com/"><img src="./src/images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
+            </ul></div>
+        <div class="top-profile"><a href="profile.html">Profile</a></div>
+        <!-- hamburger bar for responsiveness  -->
+
+        <div class="hamburger-bar" id="bar">
+            <img src="./src/images/mainIcons/hamburger.png" alt="twitter icon" width="50" height="50">
+        </div>
+
+
+        <!-- mobile btn  -->
+        <div class="mobile">
+            <button class="search-button-mobile"  aria-label="search button"><img src="./src/images/mainIcons/search.png" alt="mobile search" id="searchbtn--mob"> </button>
+            <div class="profile__button--mobile"><a href="profile.html"><img src="./src/images/mainIcons/profile.png" alt="profile"></a></div>
+        </div>
+    </header>
+    <!-- header ends here / -->
+
+    <!-- side bar  -->
+    <div class="side__navbar">
+        <div class="close__btn"><img src="./src/images/mainIcons/close.png" alt="close botton"></div>
+        <ul class="sidenav__unorderd">
+            <li><a href="./index.html">Home</a></li>
+            
+  
+            
+            <li><a href="./src/blog.html">Blog</a> </li>
+            <li><a href="./src/contact.html">ContactUs</a> </li>
+            <li><a href="./src/about.html">AboutUs</a> </li>
+            <li><a href="./src/podcast.html">Podcasts</a> </li>
+            <li><a href="./src/login.html">LogIn</a> </li>
+
+        </ul> 
+    </div>
+
+    <!-- main body starts here  -->
+    <main>
+
+        
+
+        <!-- section one starts here  -->
+        <section class="hero__section" >
+            <div class="hero__section--wrapper">
+                <h1>Subscribe  and Listen Our Podcasts</h1>
+            
+            </div>  
+            
+        </section>
+        
+        <!-- section one ends here  -->
+        <div class="undersection-para">
+            <p>This podcast is an absolute must-listen for anyone looking to learn about wide range of topics. It covers current events, business, health and wellness, technology, science and more in a fast-paced yet interesting way. For more information <a href="about.html">contact us.</a> </p>
+            <div class="learn__more"><a href="about.html"><button>Learn More </button></a></div>
+        </div>
+        
+        <section class="home__latest">
+            <h2>Latest Episodes</h2>
+            <div class="home__lateset__slider--container">
+                <div class="slider slider-left" id="slider-left"><span><<span></div>
+            
+
+                <div class="home__inner--wrapper" id="slider--container">
+                    
+                    <div class="wrapper__inner">
+                        <div class="inner">
+                            <img src="./src/images/entertaiment.jpg" alt="people dancing" width="1020" height="650">
+                            <audio src="./audios/dummy-audio.mp3" controls></audio>
+                        </div>
+                       
+                        <span>Entertainment</span>
+                        <p>A great time with artist Aster Awoke</p>
+                    </div>
+                    <div class="wrapper__inner">
+                        <div class="inner">
+                            <img src="./src/images/health.jpg" alt="mask covered by ethipian flag" width="800" height="520">
+                            <audio src="./src/audios/dummy-audio.mp3" controls></audio>
+                            
+                        </div>
+                        <span>Health</span>
+                        <p>Discussion on the impact of Covid with Dr. Dagnachew Ayele</p>
+                    </div>
+                    <div class="wrapper__inner">
+                        <div class="inner">
+                            <img src="./src/images/sport.jpg" alt="ball covered by ethipian flag"width="600" height="400" >
+                            <audio src="./src/audios/dummy-audio.mp3" controls></audio>
+                            
+                        </div>
+                        <span>Sport</span>
+                        <p>A great time with former sport Instructor Shimeles Gudeta</p>
+                    </div>
+                    <div class="wrapper__inner">
+                        <div class="inner">
+                            <img src="./src/images/business.jpg" alt="business showing graph" width="300" height="300">
+                            <audio src="./src/audios/dummy-audio.mp3" controls></audio>
+                            
+                        </div>
+                        <span>Business</span>
+                        <p>Discussion about <q> Advanced banking system</q></p>
+                    </div>
+                    <div class="wrapper__inner">
+                        <div class="inner">
+                            <img src="./src/images/technology.jpg" alt="a girl with tablet phone"width="300" height="300">
+                            <audio src="./src/audios/dummy-audio.mp3" controls></audio>
+                            
+                        </div>
+                        <span>Technology</span>
+                        <p>Emerging Technologies in our country.</p>
+                    </div>
+                    <div class="wrapper__inner">
+                        <div class="inner">
+                            <img src="./src/images/agriculture.jpg" alt="trucktor watering plants"width="300" height="300">
+
+                            <audio src="./src/audios/dummy-audio.mp3" controls></audio>
+                            
+                        </div>
+                        <span>Agriculture</span>
+                        <p>A great time with Mamo Wolde,instructor at Addis Ababa University </p>
+                    </div>
+                    <div class="wrapper__inner">
+                        <div class="inner">
+                            <img src="./src/images/entertaiment.jpg" alt="music guest" width="300" height="300">
+                            <audio src="./src/audios/dummy-audio.mp3" controls></audio>
+                            
+                        </div>
+                        <span>Music</span>
+                        <p>Dj. Akuna</p>
+                    
+                </div>
+                
+            </div>
+            <div class="slider slider-right" id="slider-right"><span>><span></div>
+            </div>
+        </section>
+        <!-- home section two ends here  -->
+
+
+        <!-- home section three starts here  -->
+
+        <section class="home__section--three">
+            <h2>This weekend Guests</h2>
+            <div class="wrapper">
+                <div class="inside">
+                    <img src="./src/images/personImg/Dr. liya.jpg" alt="Dr.Liya"  >
+                    <h3>Dr.Liya Tadesse </h3>
+                    <p>Minister of health</p>
+                </div>
+                <div class="inside">
+                    <img src="./src/images/personImg/Kenenissabekele.jpg" alt="Kennenisa running">
+                    <h3>Kenenisa Bekele</h3>
+                    <p>Long distance runner</p>
+                </div>
+            </div>
+        </section>
+        <!-- home section three ends here  -->
+
+        <!-- home section for subscription starts here  -->
+        <section class="subs">
+            <div class="subs-container">
+                <h2>SignUP Today</h2>
+                <div class="subsc">
+                    <!-- subscription form  -->
+                    <form action="index.html" method="post">
+                        <label for="subscribe">
+                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required>
+                            <!-- visually hidden label for subscription   -->
+                            <span class="visually-hidden">label for subscription</span> 
+                            <button class="sub-submit" id="sub-btn">Subscribe</button>
+
+                        </label>
+                    </form>
+                </div>
+            </div>    
+        </section>
+        <!-- subscription section ends here  -->
+    </main>
+    <!-- main ends here  -->
+
+
+    <!-- footer starts here  -->
+
+    <footer class="footer">
+        <!-- footer columns  -->
+        <div class="column">
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="index.html">Home</a>
+                <a href="./src/about.html">About</a>
+                <a href="./src/podcast.html">Podcast</a>
+                <a href="./src/signup.html">Register</a>
+            </div>
+            <div class="contact">
+                <!-- contact us info  -->
+                <h3>Contact Us:</h3>
+                <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+                <h4>+251921581691</h4>
+                <h4>AAiT</h4>
+            </div>
+            <div class="info">
+                <h3>Information: </h3>
+                <a href="./src/about.html">AboutUs</a>
+                <a href="./src/blog.html">News</a>
+            </div>
+            <div class="footer--social__container">
+                <h3 class="social_m">Social Media links</h3>
+                <div class="social">
+                    <!-- unorder list for social media links  -->
+                    <ul class="footer__sociallist">
+                        <li><a href="https://www.facebook.com/rio3210_"> <img src="./src/images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"><span class="visually-hidden">facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/rio3210_"><img src="./src/images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"><span class="visually-hidden">instagram</span></a></li>
+                        <li><a href="https://www.twitter.com/Rio3210_"><img src="./src/images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"><span class="visually-hidden">twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="./src/images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"><span class="visually-hidden">youtube</span></a></li>
+                    </ul>
+                </div>
+                <div class="footericon">
+                    <img src="./src/images/mainIcons/google-play.png" alt="googleplay png ">
+                    <img src="./src/images/mainIcons/app-store.png" alt="appstore png">    
+                </div>
+            </div>
+        </div>
+        <!-- coppyright  -->
+        <p class="copyright__last">&copy; Copyright 2022</p>
+    </footer>
+    <!-- footer ends here  -->
+
+    <script src="./src/javaScript/script.js"></script>
+    <script src="./src/javaScript/home.js"></script>
+
+</body>
+</html>
