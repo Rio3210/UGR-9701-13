@@ -53,7 +53,8 @@ const validateSignUpInputs=()=>{
     if (firstnameVal===''){
         setError(firstname,'Firstname is required.');
 
-    }else if(digits_only(firstnameVal)){
+    }else if(/\d/.test(firstnameVal) ||
+      /[^a-zA-Z0-9 ]/.test(firstnameVal)){
         setError(firstname,'Firstname should only contain letter.');
 }
     else{
