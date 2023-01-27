@@ -5,108 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPod</title>
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
 
+    <link rel="shortcut icon" href="./images/mainIcons/favicon.ico" type="image/x-icon">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!--header starts here--> 
-    <header>
-        <!-- logo of the company  -->
-        <div><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="300" height="163"></div>
-        
-        <!-- nav bar starts here  -->
-        <nav>
-            <!-- unordered list of nav starts here  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-
-                <!-- dropdown page   -->
-                <li><a href="#">Pages</a>
-
-                    <!-- unordered list for dropdon  -->
-                    <ul>
-                        
-                        <li><a href="blog.html">Blog</a> </li>
-                        <li><a href="contact.html">ContactUs</a> </li>
-                        <li><a href="about.html">AboutUs</a> </li>
-                        <li><a href="podcast.html">Podcasts</a> </li>
-                        <li><a href="login.html">LogIn</a> </li>
-
-                    </ul>           
-                   
+    <header class="sticky-top ">
+        <nav class="navbar navbar-expand-lg navbar-white bg-black ">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#">
+                    
+                <img src="./images/mainIcons/mainicon.png" alt="podcast logo" class=" d-block w-25 ">
+                </a>
+            </div>
+            <button class="navbar-toggler position-absolute top-0 end-0 mt-2 mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse  w-50 d-lg-flex justify-content-around" id="navbarScroll">
+            <div>
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active text-white " aria-current="page" href="./index.html">Home</a>
                 </li>
-                <!-- dropdown ends here  -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./about.html">About</a>
+                </li>
+                <li class="nav-item mt-2">
+                    <div class="dropdown ">
+                    <a href="#" class="text-decoration-none text-dark text-white mx-1">Pages <img src="./images/mainIcons/drop.png" alt="drop down" width="15px" height="15px"></a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a href="./contact.html">ContactUs</a>
+                        <a href="./about.html">AboutUs</a>
+                        <a href="./podcast.html">Podcasts</a>
+                        <a href="./login.html">LogIn</a>
+                    </div>
+                    </div>
+                    
+                    
+                </li>
+                <li class="nav-item text-white">
+                    <a class="nav-link text-white" href="./contact.html">Contact</a>
+                </li>
 
-                <li><a href="contact.html">Contact</a></li>         
-            </ul>   
-             <!-- unordered list of nav ends here  -->   
+                </ul>
+            </div>
+            <div>
+                <form class="px-5 px-lg-2  " role="search">
+                <input class="form-control me-2 bg-black text-white h-50" type="text" placeholder="Search & hit enter" aria-label="Search">
 
-        </nav>
-        <!-- nav ends here  -->
-
-        <div><form action="index.html" method="post">
-            <label for="top-search">
-                <!-- top search  -->
-                <input type="search" id="top-search"  placeholder="Search and hit enter..." required>
                 
-                <!-- hidden top search label text   -->
-                <span>search</span> 
-            </label>
-          </form>
-        </div>
-        <!-- div containing social accounts  -->
-
-        <div>
-            <!-- unorder list for social media links  -->
-            <ul>
-                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
-            </ul></div>
-        <div><a href="profile.html">Profile</a></div>
-    </header>
+                </form>
+              </div>
+              <div>
+                <div >
+                
+                      <div class="d-flex justify-content-center  list-unstyled gap-4 mt-2">
+                        <a href="https://www.facebook.com/rio3210_" class="d-block">
+                            <img src="./images/mainIcons/facebook.png" alt="facebook icon" class="list-unstyled " style="width: 25px; height:25px;">
+                        </a>
+                    
+                    
+                        <a href="https://www.instagram.com/rio3210_" class="d-block">
+                            <img src="./images/mainIcons/instagram.png" alt="instagram icon"  class="list-unstyled" style="width: 25px; height:25px;">
+                        </a>
+                    
+                    
+                        <a href="https://www.twitter.com/Rio3210_" class="d-block">
+                        <img src="./images/mainIcons/twitter.png" alt="twitter icon"  class="list-unstyled" style="width: 25px; height:25px;">
+                        </a>
+                        
+                        
+                        <a href="https://www.youtube.com/" class="d-block">
+                        <img src="./images/mainIcons/youtube.png" alt="youtube icon"  class="list-unstyled" style="width: 25px; height:25px;">
+                        </a>
+                      </div>
+                    
+                        
+                    <div class="text-end">
+                        <a href="profile.html" class="positon-absolute  text-white text-decoration-none p-2 pt-1">Profile</a>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
     <!-- header ends here / -->
     
     <main>
-        <section>
-            <h1>About Us</h1>
-            <div>
-                <video controls width="500" height="500">
+        <section style="background-image: url(./images/BackgroundImages/patterns.png);">
+            <h1 class="text-center mx-auto fs-1 my-5 fw-bold">About Us</h1>
+            <div class="w-75 mx-auto">
+                <video controls class="w-100 d-block ">
                     <source src="./videos/promo.mp4" type="video/mp4">
                     <track src="ps/promo-en.vtt" label="English"
                         kind="captions" srclang="en-us" default role="doc-subtitle"> 
-                       
+
                     <track src="./videos/promo-am.vtt" label="Amharic"
                         kind="captions" srclang="no" default role="doc-subtitle">
                 </video>
             </div>
         </section>
-        <section>
+        <section class="my-4">
 
             <!-- different articles  -->
             <div>
                 <article>
-                    <h2>FirshPod</h2>
-                    <p>FreshPod is an online podcast platform is an excellent way to find and listen to podcasts from a variety of different categories. For example, there may be options for sports, technology, entertainment, agriculture and philosophy. With so many different genres available, listeners can quickly find the kind of content they are interested in. Furthermore, the platform will often provide recommendations for new podcasts based on what has previously been liked or saved by a user. Podcast platforms also make discovering new shows much easier than searching through individual websites or directories. Plus, listening to podcasts on a unified platform creates an enjoyable user experience overall.</p>
+                    <h2 class="text-center mt-4">FirshPod</h2>
+                    <p class="w-75 mx-auto text-black-50">FreshPod is an online podcast platform is an excellent way to find and listen to podcasts from a variety of different categories. For example, there may be options for sports, technology, entertainment, agriculture and philosophy. With so many different genres available, listeners can quickly find the kind of content they are interested in. Furthermore, the platform will often provide recommendations for new podcasts based on what has previously been liked or saved by a user. Podcast platforms also make discovering new shows much easier than searching through individual websites or directories. Plus, listening to podcasts on a unified platform creates an enjoyable user experience overall.</p>
                 </article>
             </div>
             <div>
                 <article>
-                    <h2>The reason why it exists</h2>
-                    <p>Online podcast platform as a creative business venture in order to take advantage of the growing number of people listening to podcasts worldwide. This can be lucrative, especially since they can offer subscriptions or access to exclusive content such as interviews and special series. Additionally, with their own platform, they could attract more listeners and build an engaged community around their shows. Finally, unlike other businesses that require significant upfront resources to launch and maintain, a podcast platform is relatively cheap to start and run without needing too much expertise. All in all, starting an online podcast platform is an increasingly attractive business opportunity for anyone looking for a creative outlet with potential revenue growth.</p>
+                    <h2 class="text-center mt-4">The reason why it exists</h2>
+                    <p class="w-75 mx-auto text-black-50">Online podcast platform as a creative business venture in order to take advantage of the growing number of people listening to podcasts worldwide. This can be lucrative, especially since they can offer subscriptions or access to exclusive content such as interviews and special series. Additionally, with their own platform, they could attract more listeners and build an engaged community around their shows. Finally, unlike other businesses that require significant upfront resources to launch and maintain, a podcast platform is relatively cheap to start and run without needing too much expertise. All in all, starting an online podcast platform is an increasingly attractive business opportunity for anyone looking for a creative outlet with potential revenue growth.</p>
                 </article>
             </div>
             <div>
                 <article>
-                    <h2>How it works?</h2>
-                    <p>Podcasts can be produced independently or through a traditional media outlet. To form and release a podcast, one must first create audio or video content that meets the user's desired goal. The content should then be edited and formatted for optimal quality and performance on various digital platforms. After that, the podcast should be uploaded to hosting websites such as iTunes, Spotify, YouTube, or any other web streaming service according to its target audience. Once the host uploads an episode of the podcast it will immediately become available to any user subscribed to the appropriate channel. Podcast episodes should also be promoted through channels such as social media and blog posts to reach potential listeners and boost engagement.</p>
+                    <h2 class="text-center mt-4">How it works?</h2>
+                    <p class="w-75 mx-auto text-black-50">Podcasts can be produced independently or through a traditional media outlet. To form and release a podcast, one must first create audio or video content that meets the user's desired goal. The content should then be edited and formatted for optimal quality and performance on various digital platforms. After that, the podcast should be uploaded to hosting websites such as iTunes, Spotify, YouTube, or any other web streaming service according to its target audience. Once the host uploads an episode of the podcast it will immediately become available to any user subscribed to the appropriate channel. Podcast episodes should also be promoted through channels such as social media and blog posts to reach potential listeners and boost engagement.</p>
                 </article>
             </div>
             <div>
                 <article>
-                    <h2>About the owners</h2>
-                    <p>This group of people are the owners of an online podcast platform. They have a love for podcasts and understand the power it has in connecting with an audience. The platform they have created provides creators, both professional and amateur, with the tools and resources necessary to monetize their content. Through their platform, podcasters can share brief advertisement pitches prior to episodes, link sponsorships onto episode artwork and descriptions, and securely manage payments from listeners through monthly subscription plans. This revenue stream gives podcasters the option to pursue their passion without sacrificing long-term financial stability. 
+                    <h2 class="text-center mt-4">About the owners</h2>
+                    <p class="w-75 mx-auto text-black-50">This group of people are the owners of an online podcast platform. They have a love for podcasts and understand the power it has in connecting with an audience. The platform they have created provides creators, both professional and amateur, with the tools and resources necessary to monetize their content. Through their platform, podcasters can share brief advertisement pitches prior to episodes, link sponsorships onto episode artwork and descriptions, and securely manage payments from listeners through monthly subscription plans. This revenue stream gives podcasters the option to pursue their passion without sacrificing long-term financial stability. 
 
                         The platform was founded by a small but growing team of dedicated individuals that collectively possess extensive knowledge about all aspects of podcasting. In addition to making sure everything runs smoothly on the technical side, this team communicates regularly with potential partners in order to provide their users with access to premium providers for web hosting, analytics, marketing services and more. With years of combined experience and innovation, this team believes in using technology to help enhance podcasting experiences around the world. 
                         
@@ -120,18 +151,22 @@
         </section>
         <!-- story section ends here  -->
 
-        <!--section for subscription starts here  -->
-        <section>
-            <div>
-                <h2>SignUP Today</h2>
-                <div>
+        <!-- section for subscription starts here  -->
+        <section style="background-image: url(./images/BackgroundImages/15.jpg); height:40vh;" class="mt-5">
+            <div class="d-md-flex align-items-center   justify-content-around h-100 py-5 ">
+                <div class="my-3">
+                    <h2 class=" text-white text-center">SignUP Today</h2>
+                </div>
+                <div class="my-3">
                     <!-- subscription form  -->
                     <form action="index.html" method="post">
-                        <label for="subscribe">
-                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required>
-                            <button id="sub-btn">Subscribe</button>
+                        
+                            <div class=" form-group d-flex justify-content-center d-sm-align-items-center mx-auto px-3">
+                                <input type="email" class="form-control form-control-lg d-block w-75 mx-auto" id="subscribe" placeholder="email@gmail.com" required>
+                                <button id="sub-btn" class="btn btn-primary bg-black d-block">Subscribe</button>
+                              </div>
 
-                        </label>
+                
                     </form>
                 </div>
             </div>    
@@ -143,35 +178,35 @@
 
     <!-- footer starts here  -->
 
-    <footer>
+    <footer class="bg-black text-white">
         <!-- footer columns  -->
-        <div>
-            <div>
-                <p>Pages</p>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="signup.html">Register</a>
+        <div class="bg-black d-flex gap-3 flex-wrap justify-content-around px-1">
+            <div class="d-flex flex-column gap-1">
+                <p class="fw-bold" >Pages</p>
+                <a class="text-decoration-none text-white" href="index.html">Home</a>
+                <a class="text-decoration-none text-white" href="about.html">About</a>
+                <a class="text-decoration-none text-white" href="podcast.html">Podcast</a>
+                <a class="text-decoration-none text-white" href="signup.html">Register</a>
             </div>
             <div>
                 <!-- contact us info  -->
-                <address>
-                    <p>Contact Us:</p>
-                    <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+                <address class="d-flex flex-column gap-1">
+                    <p class="fw-bold">Contact Us:</p>
+                    <a class="text-decoration-none text-white" href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
                     <p>+251921581691</p>
                     <p>AAiT</p>
                 </address>
             </div>
-            <div>
-                <p>Information: </p>
-                <a href="about.html">AboutUs</a>
-                <a href="blog.html">News</a>
+            <div class="d-flex flex-column gap-1">
+                <p class="fw-bold">Information: </p>
+                <a class="text-decoration-none text-white" href="about.html">AboutUs</a>
+                <a class="text-decoration-none text-white" href="blog.html">News</a>
             </div>
             <div>
-                <p>Social Media links</p>
+                <p class="fw-bold">Social Media links</p>
                 <div>
                     <!-- unorder list for social media links  -->
-                    <ul>
+                    <ul class="d-flex list-unstyled">
                         <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
                         <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
                         <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
@@ -180,13 +215,15 @@
                 </div>
                 <div>
                     <img src="./images/mainIcons/google-play.png" alt="googleplay png " width="96" height="33">
-                    <img src="./images/mainIcons/app-store.png" alt="appstore png" width="96" height="33">   
+                    <img src="./images/mainIcons/app-store.png" alt="appstore png" width="96" height="33">     
                 </div>
             </div>
         </div>
         <!-- coppyright  -->
-        <p>&copy; Copyright 2022</p>
+        <p class="m-0 text-center py-2">&copy; Copyright 2023</p>
     </footer>
     <!-- footer ends here  -->
+    
+    <script src="./bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

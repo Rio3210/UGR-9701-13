@@ -5,76 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPod</title>
+    
+    <link rel="icon" type="image/x-icon" href="./images/mainIcons/favicon.ico">
+    <!-- css link bootstrap  -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
 
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
     <!--header starts here--> 
-    <header>
-        <!-- logo of the company  -->
-        <div><img src="./images/mainIcons/mainicon.png" alt="podcast logo" width="300" height="163"></div>
-        
-        <!-- nav bar starts here  -->
-        <nav>
-            <!-- unordered list of nav starts here  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-
-                <!-- dropdown page   -->
-                <li><a href="#">Pages</a>
-
-                    <!-- unordered list for dropdon  -->
-                    <ul>
-                        
-                        <li><a href="blog.html">Blog</a> </li>
-                        <li><a href="contact.html">ContactUs</a> </li>
-                        <li><a href="about.html">AboutUs</a> </li>
-                        <li><a href="podcast.html">Podcasts</a> </li>
-                        <li><a href="login.html">LogIn</a> </li>
-
-                    </ul>           
-                   
+    <header class="sticky-top ">
+        <nav class="navbar navbar-expand-lg navbar-white bg-black ">
+          <div class="container-fluid">
+            <div>
+                  <a class="navbar-brand" href="#">
+                    
+                  <img src="./images/mainIcons/mainicon.png" alt="podcast logo" class=" d-block w-25 ">
+                  </a>
+            </div>
+            <button class="navbar-toggler position-absolute top-0 end-0 mt-2 mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse  w-50 d-lg-flex justify-content-around" id="navbarScroll">
+              <div>
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white " aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item mt-2">
+                    <div class="dropdown ">
+                      <a href="#" class="text-decoration-none text-dark text-white mx-1">Pages <img src="./images/mainIcons/drop.png" alt="drop down" width="15px" height="15px"></a>
+                      <div class="dropdown-content">
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                              <a href="./contact.html">ContactUs</a>
+                              <a href="./about.html">AboutUs</a>
+                              <a href="./podcast.html">Podcasts</a>
+                              <a href="./login.html">LogIn</a>
+                      </div>
+                    </div>
+                    
+                    
+                  </li>
+                  <li class="nav-item text-white">
+                    <a class="nav-link text-white" href="./contact.html">Contact</a>
                 </li>
-                <!-- dropdown ends here  -->
-
-                <li><a href="contact.html">Contact</a></li>         
-            </ul>   
-             <!-- unordered list of nav ends here  -->   
-
+  
+                </ul>
+              </div>
+              <div>
+                <form class="px-5 px-lg-2  " role="search">
+                  <input class="form-control me-2 bg-black text-white h-50" type="text" placeholder="Search & hit enter" aria-label="Search">
+                  
+                
+                </form>
+              </div>
+              <div>
+                <div >
+                
+                      <div class="d-flex justify-content-center  list-unstyled gap-4 mt-2">
+                        <a href="https://www.facebook.com/rio3210_" class="d-block">
+                            <img src="./images/mainIcons/facebook.png" alt="facebook icon" class="list-unstyled " style="width: 25px; height:25px;">
+                        </a>
+                    
+                    
+                        <a href="https://www.instagram.com/rio3210_" class="d-block">
+                            <img src="./images/mainIcons/instagram.png" alt="instagram icon"  class="list-unstyled" style="width: 25px; height:25px;">
+                        </a>
+                    
+                    
+                        <a href="https://www.twitter.com/Rio3210_" class="d-block">
+                        <img src="./images/mainIcons/twitter.png" alt="twitter icon"  class="list-unstyled" style="width: 25px; height:25px;">
+                        </a>
+                        
+                        
+                        <a href="https://www.youtube.com/" class="d-block">
+                        <img src="./images/mainIcons/youtube.png" alt="youtube icon"  class="list-unstyled" style="width: 25px; height:25px;">
+                        </a>
+                      </div>
+                    
+                        
+                    <div class="text-end">
+                        <a href="profile.html" class="positon-absolute  text-white text-decoration-none p-2 pt-1">Profile</a>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
-        <!-- nav ends here  -->
-
-        <div><form action="index.html" method="post">
-            <label for="top-search">
-                <!-- top search  -->
-                <input type="search" id="top-search"  placeholder="Search and hit enter..." required>
-                <!-- hidden top search label text   -->
-                <span>search</span> 
-            </label>
-          </form>
-        </div>
-        <!-- div containing social accounts  -->
-
-        <div>
-            <!-- unorder list for social media links  -->
-            <ul>
-                <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
-                <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
-                <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="./images/mainIcons/youtube.png" alt="youtube icon" width="50" height="50"></a></li>
-            </ul></div>
-        <div><a href="profile.html">Profile</a></div>
-    </header>
-    <!-- header ends here / -->
+      </header>
+    
 
 
     <!-- main body starts here  -->
     <main>
         <!-- section one starts here  -->
-        <section>
-            <div>
-                <h1>Subscribe and Listen Our Podcasts</h1>
-                <img src="./images/BackgroundImages/1.jpg" alt="XLR microphone" width="600" height="600">
+        <section class="position-relative" style="height:100vh;">
+            <div class=" position-absolute  align-items-center justify-content-center w-100 h-100">
+                <h1 class=" z-5 fs-1 text-white fw-bolder  position-absolute top-0 start-0 end-0 bottom-0  text-center my-4" >Subscribe and Listen Our Podcasts</h1>
+                <img src="./images/BackgroundImages/1.jpg" alt="XLR microphone"  class="z-n3  top-0 start-0 end-0 bottom-0 w-100 h-100" >
                 
 
             </div>  
@@ -82,104 +116,182 @@
         </section>
 
         <!-- section one ends here  -->
-        <div>
-            <p>This podcast is an absolute must-listen for anyone looking to learn about wide range of topics. It covers current events, business, health and wellness, technology, science and more in a fast-paced yet interesting way. For more information <a href="about.html">LearnMore</a> </p>
+        <div class="d-flex flex-column justify-content-center align-items-center my-4">
+            <p class="px-3">This podcast is an absolute must-listen for anyone looking to learn about wide range of topics. It covers current events, business, health and wellness, technology, science and more in a fast-paced yet interesting way. For more information <a href="about.html">contact us.</a> </p>
+            <div ><a href="./about.html"><button class="btn bg-black text-white">Learn More </button></a></div>
         </div>
         
         <section>
-            <h2>Latest Episodes</h2>
-            <div>
-                <div>
-                    
-                    <div>
-                        <div>
-                            <img src="./images/entertaiment.jpg" alt="people dancing" width="400" height="400">
-                            <audio src="./audios/dummy1.mp3" controls></audio>
-                            <p> If you only have 24 hours a day, your success will depend up on how you use the 24.</p>
+            <h2 class="text-center fs-1 my-3">Latest Episodes</h2>
+            <div id="carouselExampleControls" class=" carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex gap-4 justify-content-center overflow-hidden w-75 mx-auto align-items-center">
+                            <!-- !!!!! -->
+        
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/entertaiment.jpg" alt="people dancing">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+                                </div>
+        
+                                <span class="fw-bolder fs-6 d-block px-3">Entertainment</span>
+                                <p class="px-3 text-wrap">A great time with artist Aster Awoke</p>
+                            </div>
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/agriculture.jpg" alt="trucktor watering plants">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+                                </div>
+        
+                                <span class="fw-bolder fs-6 d-block px-3">Agriculture</span>
+                                <p class="px-3 text-wrap">Green legacy</p>
+                            </div>
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/sport.jpg" alt="ball covered by ethipian flag">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+                                </div>
+        
+                                <span class="fw-bolder fs-6 d-block px-3">Sport</span>
+                                <p class="px-3 text-wrap">Football and Ethiopia</p>
+                            </div>
+        
+                            <!-- !!!!! -->
+        
                         </div>
-                        <span>Entertainment</span>
-                        <p>A great time with artist Aster Awoke</p>
                     </div>
-                    <div>
-                        <div>
-                            <img src="./images/health.jpg" alt="mask covered by ethipian flag" width="400" height="400">
-                            <audio src="./audios/dummy2.mp3" controls></audio>
-                            <p>If you only get 24 hours in a day and the difference between Oprah and the person that's broke is Oprah uses hher 24 hours wisely.</p>
-                            
+                    <div class="carousel-item">
+                        <div class="d-flex gap-4 justify-content-center overflow-hidden w-75 mx-auto align-items-center">
+        
+                            <!-- !!!!! -->
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/health.jpg" alt="mask covered by ethipian flag">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+        
+                                </div>
+                                <span class="fw-bolder fs-6 d-block px-3">Health</span>
+                                <p class="px-3 text-wrap">Discussion on the impact </p>
+                            </div>
+        
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/sport.jpg" alt="ball covered by ethipian flag">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+        
+                                </div>
+                                <span class="fw-bolder fs-6 d-block px-3">Sport</span>
+                                <p class="px-3 text-wrap">A great time with former</p>
+                            </div>
+        
+        
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px"src="./images/business.jpg" alt="business showing graph">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+                            </div>
+                                <span class="fw-bolder fs-6 d-block px-3">Business</span>
+                                <p class="px-3 text-wrap">Discussion about </p>
+                            </div>
+                            <!-- !!!!! -->
                         </div>
-                        <span>Health</span>
-                        <p>Discussion on the impact of Covid with Dr. Dagnachew Ayele</p>
                     </div>
-                    <div>
-                        <div>
-                            <img src="./images/sport.jpg" alt="ball covered by ethipian flag" width="400" height="400" >
-                            <audio src="./audios/dummy1.mp3" controls></audio>
-                            <p> If you only have 24 hours a day, your success will depend up on how you use the 24.</p>
-                            
+                    <div class="carousel-item">
+                        <div class="d-flex gap-4 justify-content-center overflow-hidden w-75 mx-auto align-items-center">
+        
+                            <!-- !!!!! -->
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/entertaiment.jpg" alt="people dancing">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+        
+                                </div>
+                                <span class="fw-bolder fs-6 d-block px-3">Technology</span>
+                                <p class="px-3 text-wrap">Emerging Technologies .</p>
+                            </div>
+        
+        
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/agriculture.jpg" alt="trucktor watering plants">
+        
+                                    <audio class="my-4 w-75 mx-auto d-block border" src="./audios/dummy1.mp3" controls></audio>
+        
+                                </div>
+                                <span class="fw-bolder fs-6 d-block px-3">Agriculture</span>
+                                <p class="px-3 text-wrap">A great time with Mamo Wolde,
+                                </p>
+                            </div>
+        
+        
+                            <div class="border shadow shdow-lg p-2">
+                                <div>
+                                    <img class="d-block mx-auto" width="275px" src="./images/entertaiment.jpg" alt="people dancing">
+                                    <audio class="my-4 w-75 mx-auto d-block" src="./audios/dummy1.mp3" controls></audio>
+        
+                                </div>
+                                <span class="fw-bolder fs-6 d-block px-3">Music</span>
+                                <p class="px-3 text-wrap">Dj. Akuna</p>
+        
+                            </div>
+                            <!-- !!!!! -->
                         </div>
-                        <span>Sport</span>
-                        <p>A great time with former sport Instructor Shimeles Gudeta</p>
                     </div>
-                    <div>
-                        <div>
-                            <img src="./images/business.jpg" alt="business showing graph" width="400" height="400">
-                            <audio src="./audios/dummy2.mp3" controls></audio>
-                            <p>If you only get 24 hours in a day and the difference between Oprah and the person that's broke is Oprah uses hher 24 hours wisely.</p>
-                            
-                        </div>
-                        <span>Business</span>
-                        <p>Discussion about <q> Advanced banking system</q></p>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./images/technology.jpg" alt="a girl with tablet phone"width="400" height="400">
-                            <audio src="./audios/dummy1.mp3" controls></audio>
-                            <p> If you only have 24 hours a day, your success will depend up on how you use the 24.</p>
-                            
-                        </div>
-                        <span>Technology</span>
-                        <p>Emerging Technologies in our country.</p>
-                    </div>
-                    <div>
-                        
-                
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        
+                </button>
             </div>
-            </div>
-        </section>
+          </section>
         <!-- home section two ends here  -->
 
 
         <!-- home section three starts here  -->
 
-        <section>
-            <h2>This weekend Guests</h2>
-            <div>
-                <div>
-                    <img src="./images/personImg/Dr. liya.jpg" alt="Dr. Liya Kebede"  width="400" height="400">
-                    <h3>Dr.Liya Tadesse </h3>
-                    <p>Minister of health</p>
-                </div>
-                <div>
-                    <img src="./images/personImg/Kenenissabekele.jpg" alt="Kenenisa Bekele running" width="400" height="400">
-                    <h3>Kenenisa Bekele</h3>
-                    <p>Long distance runner</p>
+        <section class="my-4">
+            <h2 class="text-center m-b-10">This weekend Guests</h2>
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-evenly">
+                    <div class="border shadow shadow-lg my-3">
+                        <img src="./images/personImg/Dr. liya.jpg" alt="Dr. Liya Kebede" width="300" height="300">
+                        <h3 class="px-3">Dr.Liya Tadesse </h3>
+                        <p class="px-3">Minister of health</p>
+                    </div>
+                    <div class="border shadow shadow-lg my-3">
+                        <img src="./images/personImg/Kenenissabekele.jpg" alt="Kenenisa Bekele running" width="300"
+                            height="300">
+                        <h3 class="px-3">Kenenisa Bekele</h3>
+                        <p class="px-3">Long distance runner</p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- home section three ends here  -->
 
         <!-- home section for subscription starts here  -->
-        <section>
-            <div>
-                <h2>SignUP Today</h2>
-                <div>
+        <section style="background-image: url(./images/BackgroundImages/15.jpg); height:40vh;" class="mt-5">
+            <div class="d-md-flex align-items-center   justify-content-around h-100 py-5 ">
+                <div class="my-3">
+                    <h2 class=" text-white text-center">SignUP Today</h2>
+                </div>
+                <div class="my-3">
                     <!-- subscription form  -->
                     <form action="index.html" method="post">
-                        <label for="subscribe">
-                            <input type="email" id="subscribe" placeholder="email@gmail.com" id="subscribe" required>
-                            <button id="sub-btn">Subscribe</button>
+                        
+                            <div class=" form-group d-flex justify-content-center d-sm-align-items-center mx-auto px-3">
+                                <input type="email" class="form-control form-control-lg d-block w-75 mx-auto" id="subscribe" placeholder="email@gmail.com" required>
+                                <button id="sub-btn" class="btn btn-primary bg-black d-block">Subscribe</button>
+                              </div>
 
-                        </label>
+                
                     </form>
                 </div>
             </div>    
@@ -191,35 +303,35 @@
 
     <!-- footer starts here  -->
 
-    <footer>
+    <footer class="bg-black text-white" >
         <!-- footer columns  -->
-        <div>
-            <div>
-                <p>Pages</p>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="signup.html">Register</a>
+        <div class="bg-black d-flex gap-3 flex-wrap justify-content-around px-1" >
+            <div class="d-flex flex-column gap-1">
+                <p class="fw-bold" >Pages</p>
+                <a class="text-decoration-none text-white" href="index.html">Home</a>
+                <a class="text-decoration-none text-white" href="about.html">About</a>
+                <a class="text-decoration-none text-white" href="podcast.html">Podcast</a>
+                <a class="text-decoration-none text-white" href="signup.html">Register</a>
             </div>
             <div>
                 <!-- contact us info  -->
-                <address>
-                    <p>Contact Us:</p>
-                    <a href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
+                <address class="d-flex flex-column gap-1">
+                    <p class="fw-bold">Contact Us:</p>
+                    <a class="text-decoration-none text-white" href="mailto:surawok32@gmail.com">surawork32@gmail.com</a>
                     <p>+251921581691</p>
                     <p>AAiT</p>
                 </address>
             </div>
-            <div>
-                <p>Information: </p>
-                <a href="about.html">AboutUs</a>
-                <a href="blog.html">News</a>
+            <div class="d-flex flex-column gap-1">
+                <p class="fw-bold">Information: </p>
+                <a class="text-decoration-none text-white" href="about.html">AboutUs</a>
+                <a class="text-decoration-none text-white" href="blog.html">News</a>
             </div>
             <div>
-                <p>Social Media links</p>
+                <p class="fw-bold">Social Media links</p>
                 <div>
                     <!-- unorder list for social media links  -->
-                    <ul>
+                    <ul class="d-flex list-unstyled">
                         <li><a href="https://www.facebook.com/rio3210_"> <img src="./images/mainIcons/facebook.png" alt="facebook icon" width="50" height="50"></a></li>
                         <li><a href="https://www.instagram.com/rio3210_"><img src="./images/mainIcons/instagram.png" alt="instagram icon" width="50" height="50"></a></li>
                         <li><a href="https://www.twitter.com/Rio3210_"><img src="./images/mainIcons/twitter.png" alt="twitter icon" width="50" height="50"></a></li>
@@ -233,9 +345,12 @@
             </div>
         </div>
         <!-- coppyright  -->
-        <p>&copy; Copyright 2022</p>
+        <p class="m-0 text-center py-2">&copy; Copyright 2023</p>
     </footer>
     <!-- footer ends here  -->
+
+
+    <script src="./bootstrap/bootstrap.min.js"></script>
 
 </body>
 </html>
